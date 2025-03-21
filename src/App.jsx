@@ -6,8 +6,7 @@ function App() {
 
   return (
     <>
-      <p>oi</p>
-      <button className='mt-4 px-4 py-2 bg-blue-100 rounded'>teste</button>
+      <h1 className='text-4xl font-poppins'>Lucas Brito</h1>
     </>
   )
 }

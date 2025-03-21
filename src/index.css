@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --font-fira-code: "Fira Code", monospace;
+
+  --color-dark-blue: #0A192F;
+  --color-mid-blue: #A8B3D3;
+  --color-light-blue: #C9D7F2;
+  --color-dark-green: #44A694;
+  --color-bright-green: #00FFD1;
+
+}
