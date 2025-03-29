@@ -23,7 +23,7 @@ function Header() {
     }, [])
 
     return (
-        <header className="flex justify-between items-center fixed w-full nt-lg:px-60 nt-sm:px-30 tb:px-15 px-7 py-1.5 font-fira-code bg-dark-blue text-light-blue shadow-header">
+        <header className="flex justify-between items-center sticky w-full px-7 py-1.5 shadow-header font-fira-code bg-dark-blue text-light-blue dt:px-60 nt-lg:px-40 nt-sm:px-30 tb:px-15">
             <h1>
                 <Link to="/">
                     <img src={logo} alt="Logo do projeto" className="w-11"/>

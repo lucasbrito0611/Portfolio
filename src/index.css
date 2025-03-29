@@ -10,13 +10,16 @@
   --color-dark-green: #44A694;
   --color-bright-green: #00FFD1;
 
-
   --shadow-header: 0 6px 8px rgba(0, 0, 0, 0.60);
 
+  --shadow-teste: inset 0 0 0 0 black;
+  --shadow-testehover: inset 172px black;
+
+  --breakpoint-dt: 1900px;
   --breakpoint-nt-lg: 1440px;
   --breakpoint-nt-sm: 1024px;
   --breakpoint-tb: 768px;
-  --breakpoint-mb: 320px;
+  --breakpoint-mb: 375px;
 }
 
 * {
