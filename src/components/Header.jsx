@@ -41,8 +41,7 @@ function Header() {
                                     <IoMdClose size={40} className="text-light-blue hover:text-white" />
                                 </button>
                                 <ul className="flex flex-col items-start gap-10 text-sm">
-                                    <li className="cursor-pointer hover:text-white transition duration-400">Sobre</li>
-                                    <li className="cursor-pointer hover:text-white transition duration-400">Habilidades</li>
+                                    <li className="cursor-pointer hover:text-white transition duration-400" onClick={() => document.getElementById("sobre")?.scrollIntoView()}>Sobre</li>
                                     <li className="cursor-pointer hover:text-white transition duration-400">Projetos</li>
                                     <li className="cursor-pointer hover:text-white transition duration-400">Contato</li>
                                 </ul>
@@ -57,8 +56,7 @@ function Header() {
             ) : (
                 <nav className="flex items-center gap-40">
                     <ul className="flex gap-10 text-sm">
-                        <li className="cursor-pointer hover:text-white transition duration-400">Sobre</li>
-                        <li className="cursor-pointer hover:text-white transition duration-400">Habilidades</li>
+                        <li className="cursor-pointer hover:text-white transition duration-400" onClick={() => document.getElementById("sobre")?.scrollIntoView()}>Sobre</li>
                         <li className="cursor-pointer hover:text-white transition duration-400">Projetos</li>
                         <li className="cursor-pointer hover:text-white transition duration-400">Contato</li>
                     </ul>

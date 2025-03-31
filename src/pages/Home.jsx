@@ -1,7 +1,19 @@
 import Button from '../components/Button'
 import { IoMdDownload } from "react-icons/io";
 import DevVector from '../assets/vetor-dev.png'
+import html from '../assets/skills/html.png'
+import css from '../assets/skills/css.png'
+import tailwind from '../assets/skills/tailwind.png'
+import javascript from '../assets/skills/javascript.png'
+import react from '../assets/skills/react.png'
+import wordpress from '../assets/skills/wordpress.png'
+import python from '../assets/skills/python.png'
+import django from '../assets/skills/django.png'
+import vercel from '../assets/skills/vercel.png'
+import github from '../assets/skills/github.png'
 import AboutPhoto from '../assets/foto_sobre.png'
+
+import { motion } from "framer-motion"
 
 function Home() {
     const downloadIcon = <IoMdDownload />
@@ -15,7 +27,7 @@ function Home() {
     
     return (
       <main className="flex flex-col gap-25 px-7 py-15 min-h-screen bg-dark-blue dt:px-60 nt-lg:px-40 nt-sm:px-30 tb:px-15" id="main-home">
-        <section className='flex justify-between items-center'>
+        <motion.section className='flex justify-between items-center' initial={{ opacity: 0, y: -50 }}  whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}  transition={{ duration: 1.2 }}>
           <div className='dt:w-1/2 nt-sm:w-[55%] w-full'>
             <p className='font-fira-code text-bright-green'>Olá, meu nome é</p>
             <h1 className='font-poppins text-light-blue my-2 text-5xl dt:text-9xl nt-lg:text-8xl nt-sm:text-[80px] tb:text-8xl mb:text-6xl'>Lucas Brito</h1>
@@ -23,13 +35,13 @@ function Home() {
             <p className='font-poppins text-mid-blue my-9 text-[15px] nt-lg:text-lg nt-sm:text-base tb:text-base'>
               Eu desenvolvo aplicações web completas, atuando tanto no front-end com HTML, CSS, JS e React, quanto no back-end com Python e Django.
             </p>
-            <Button text="Currículo" icon={downloadIcon} onClick={handleDownload}/>
+            <Button text="Currículo" icon={downloadIcon} title="Baixar Currículo" onClick={handleDownload}/>
           </div>
           <div className='w-2/5 nt-lg:w-7/20 nt-sm:w-2/5 nt-sm:block hidden'>
             <img src={DevVector} alt="Dev vector"/>
           </div>
-        </section>
-        <section className='flex flex-col items-center gap-8'>
+        </motion.section>
+        <motion.section id='sobre' className='flex flex-col items-center gap-15' initial={{ opacity: 0, y: -50 }}  whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}  transition={{ duration: 1.2 }}>
           <h3 className='nt-sm:text-[40px] text-[35px] text-light-blue font-fira-code'>Sobre Mim</h3>
           <div className='flex flex-col-reverse nt-sm:flex-row items-center nt-lg:gap-40 gap-15'>
             <div className='relative nt-lg:w-[30%] nt-sm:w-2/5 tb:w-1/2 mb:w-3/4'>
@@ -53,7 +65,20 @@ function Home() {
               Meu primeiro contato com o mercado de trabalho foi como <span className='text-bright-green'>bolsista no Centro de Soluções Aplicadas (CSA),</span> onde trabalhei com <span className='text-bright-green'>Wordpress</span> e tive a <span className='text-bright-green'>experiência de lidar com um cliente</span> pela primeira vez.
             </p>
           </div>
-        </section>
+          <motion.div className='flex gap-13 mt-5 group' initial={{ opacity: 0, y: -50 }}  whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}  transition={{ duration: 1.2 }}>
+            <img src={html} alt="" className='w-15 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='HTML'/>
+            <img src={css} alt="" className='w-17 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='CSS'/>
+            <img src={tailwind} alt="" className='w-23 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Tailwind CSS'/>
+            <img src={javascript} alt="" className='w-17 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='JavaScript'/>
+            <img src={react} alt="" className='w-20 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='React'/>
+            <img src={wordpress} alt="" className='w-17 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Wordpress'/>
+            <img src={python} alt="" className='w-17 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Python'/>
+            <img src={django} alt="" className='w-15 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Django'/>
+            <img src={github} alt="" className='w-18 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Github'/>
+            <img src={vercel} alt="" className='w-60 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Vercel'/>
+          </motion.div>
+
+        </motion.section>
       </main>
     )
 }

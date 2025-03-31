@@ -1,8 +1,8 @@
-function Button({text, icon, onClick}) {
+function Button({text, icon, title, onClick}) {
     const handleClick = onClick || (() => {})
 
     return (
-        <button 
+        <button title={title}
             onClick={handleClick} 
             className="flex items-center gap-3 relative z-10 px-6 py-2 rounded-[3px] border border-bright-green text-bright-green outline-none
           hover:text-black hover:font-medium hover:cursor-pointer
