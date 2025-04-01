@@ -44,9 +44,9 @@ function Home() {
         <motion.section id='sobre' className='flex flex-col items-center gap-10' initial={{ opacity: 0, y: -50 }}  whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}  transition={{ duration: 1.2 }}>
           <h3 className='nt-sm:text-[40px] text-[35px] text-light-blue font-fira-code'>Sobre Mim</h3>
           <div className='flex flex-col-reverse nt-sm:flex-row items-center nt-lg:gap-40 gap-15'>
-            <div className='relative nt-lg:w-[30%] nt-sm:w-2/5 tb:w-1/2 mb:w-3/4'>
+            <div className='menu:relative nt-lg:w-[30%] nt-sm:w-2/5 tb:w-1/2 mb:w-3/4' id='teste'>
               <img src={AboutPhoto} alt="Photo of the about section" className='w-full'/>
-              <div className='absolute bottom-[-3%] right-[-5%] bg-dark-blue text-bright-green font-poppins p-4 shadow-[5px_5px_5px_#000]'>
+              <div className='menu:block hidden absolute bottom-[-3%] right-[-5%] bg-dark-blue text-bright-green font-poppins p-4 shadow-[5px_5px_5px_#000] z-0'>
                 <p className='text-xl'>18 anos</p>
               </div>
             </div>
@@ -65,17 +65,17 @@ function Home() {
               Meu primeiro contato com o mercado de trabalho foi como <span className='text-bright-green'>bolsista no Centro de Soluções Aplicadas (CSA),</span> onde trabalhei com <span className='text-bright-green'>Wordpress</span> e tive a <span className='text-bright-green'>experiência de lidar com um cliente</span> pela primeira vez.
             </p>
           </div>
-          <motion.div className='flex gap-13 mt-10 group' initial={{ opacity: 0, y: -50 }}  whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}  transition={{ duration: 1.2 }}>
-            <img src={html} alt="" className='w-15 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='HTML'/>
-            <img src={css} alt="" className='w-17 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='CSS'/>
-            <img src={tailwind} alt="" className='w-23 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Tailwind CSS'/>
-            <img src={javascript} alt="" className='w-18 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='JavaScript'/>
-            <img src={react} alt="" className='w-21 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='React'/>
-            <img src={wordpress} alt="" className='w-19 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Wordpress'/>
-            <img src={python} alt="" className='w-19 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Python'/>
-            <img src={django} alt="" className='w-15 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Django'/>
-            <img src={github} alt="" className='w-19 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Github'/>
-            <img src={vercel} alt="" className='w-60 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Vercel'/>
+          <motion.div className='flex flex-wrap justify-center nt-lg:gap-13 nt-sm:gap-7 gap-10 mt-10 group' initial={{ opacity: 0, y: -50 }}  whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}  transition={{ duration: 1.2 }}>
+            <img src={html} alt="HTML" className='dt:w-15 nt-lg:w-12 nt-sm:w-10 tb:w-12 w-11 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='HTML'/>
+            <img src={css} alt="CSS" className='dt:w-17 nt-lg:w-14 nt-sm:w-11 tb:w-14 w-13 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='CSS'/>
+            <img src={tailwind} alt="Tailwind" className='dt:w-23 nt-lg:w-15 nt-sm:w-13 tb:w-15 w-14 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Tailwind CSS'/>
+            <img src={javascript} alt="Javascript" className='dt:w-18 nt-lg:w-14 nt-sm:w-10 tb:w-14 w-12 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='JavaScript'/>
+            <img src={react} alt="React" className='dt:w-21 nt-lg:w-17 nt-sm:w-13 tb:w-17 w-13 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='React'/>
+            <img src={wordpress} alt="Wordpress" className='dt:w-19 nt-lg:w-15 nt-sm:w-12 tb:w-15 w-12 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Wordpress'/>
+            <img src={python} alt="Python" className='dt:w-19 nt-lg:w-15 nt-sm:w-11 tb:w-15 w-12 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Python'/>
+            <img src={django} alt="Django" className='dt:w-15 nt-lg:w-12 nt-sm:w-10 tb:w-12 w-10 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Django'/>
+            <img src={github} alt="Github" className='dt:w-19 nt-lg:w-15 nt-sm:w-12 tb:w-15 w-12 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Github'/>
+            <img src={vercel} alt="Vercel" className='dt:w-60 nt-lg:w-33 nt-sm:w-31 tb:w-45 w-31 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Vercel'/>
           </motion.div>
 
         </motion.section>
