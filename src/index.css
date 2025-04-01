@@ -11,9 +11,8 @@
   --color-bright-green: #00FFD1;
 
   --shadow-header: 0 6px 8px rgba(0, 0, 0, 0.60);
+  --shadow-footer: 0 -6px 8px rgba(0, 0, 0, 0.60);
 
-  --shadow-teste: inset 0 0 0 0 black;
-  --shadow-testehover: inset 172px black;
 
   --breakpoint-dt: 1900px;
   --breakpoint-nt-lg: 1440px;

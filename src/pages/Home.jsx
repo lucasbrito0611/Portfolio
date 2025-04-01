@@ -41,7 +41,7 @@ function Home() {
             <img src={DevVector} alt="Dev vector"/>
           </div>
         </motion.section>
-        <motion.section id='sobre' className='flex flex-col items-center gap-15' initial={{ opacity: 0, y: -50 }}  whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}  transition={{ duration: 1.2 }}>
+        <motion.section id='sobre' className='flex flex-col items-center gap-10' initial={{ opacity: 0, y: -50 }}  whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}  transition={{ duration: 1.2 }}>
           <h3 className='nt-sm:text-[40px] text-[35px] text-light-blue font-fira-code'>Sobre Mim</h3>
           <div className='flex flex-col-reverse nt-sm:flex-row items-center nt-lg:gap-40 gap-15'>
             <div className='relative nt-lg:w-[30%] nt-sm:w-2/5 tb:w-1/2 mb:w-3/4'>
@@ -65,16 +65,16 @@ function Home() {
               Meu primeiro contato com o mercado de trabalho foi como <span className='text-bright-green'>bolsista no Centro de Soluções Aplicadas (CSA),</span> onde trabalhei com <span className='text-bright-green'>Wordpress</span> e tive a <span className='text-bright-green'>experiência de lidar com um cliente</span> pela primeira vez.
             </p>
           </div>
-          <motion.div className='flex gap-13 mt-5 group' initial={{ opacity: 0, y: -50 }}  whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}  transition={{ duration: 1.2 }}>
+          <motion.div className='flex gap-13 mt-10 group' initial={{ opacity: 0, y: -50 }}  whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}  transition={{ duration: 1.2 }}>
             <img src={html} alt="" className='w-15 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='HTML'/>
             <img src={css} alt="" className='w-17 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='CSS'/>
             <img src={tailwind} alt="" className='w-23 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Tailwind CSS'/>
-            <img src={javascript} alt="" className='w-17 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='JavaScript'/>
-            <img src={react} alt="" className='w-20 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='React'/>
-            <img src={wordpress} alt="" className='w-17 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Wordpress'/>
-            <img src={python} alt="" className='w-17 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Python'/>
+            <img src={javascript} alt="" className='w-18 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='JavaScript'/>
+            <img src={react} alt="" className='w-21 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='React'/>
+            <img src={wordpress} alt="" className='w-19 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Wordpress'/>
+            <img src={python} alt="" className='w-19 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Python'/>
             <img src={django} alt="" className='w-15 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Django'/>
-            <img src={github} alt="" className='w-18 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Github'/>
+            <img src={github} alt="" className='w-19 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Github'/>
             <img src={vercel} alt="" className='w-60 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Vercel'/>
           </motion.div>
 
