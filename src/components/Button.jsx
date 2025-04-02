@@ -2,15 +2,14 @@ function Button({text, icon, title, onClick}) {
     const handleClick = onClick || (() => {})
 
     return (
-        <button title={title}
+        <button 
+            title={title}
             onClick={handleClick} 
-            className="flex items-center gap-3 menu:relative z-0 px-6 py-2 rounded-[3px] border border-bright-green text-bright-green outline-none
-          hover:text-black hover:font-medium hover:cursor-pointer
-            before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-bright-green before:transition-all before:duration-500 hover:before:scale-x-100 before:scale-x-0 before:origin-left before:-z-0
-            nt-sm:text-sm"
+            className="flex items-center gap-3 px-6 py-2 rounded-[3px] border border-bright-green text-bright-green outline-none
+          hover:text-black hover:bg-bright-green hover:scale-105 hover:font-medium hover:cursor-pointer transition-all duration-400"
         >
-            <p className="font-fira-code text-sm dt:text-base">{text}</p>
-            <div className="text-xl dt:text-2xl tb:text-xl">{icon}</div>
+            <p className="font-fira-code text-xs dt:text-sm">{text}</p>
+            <div className="text-base dt:text-xl tb:text-lg">{icon}</div>
         </button>
 
     )
