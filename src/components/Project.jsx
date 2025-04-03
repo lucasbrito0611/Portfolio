@@ -7,12 +7,12 @@ function Project({image, title, description, technologies, buttons}) {
     const githubIcon = <FaGithub />
 
     return (
-        <div className='flex items-center gap-8 px-4 py-6 rounded-[10px] w-[49%] bg-[#081426]'>
-            <div className='w-1/2'>
+        <div className='flex dt:flex-row flex-col dt:items-center gap-8 dt:px-5 nt-lg:px-15 px-7 py-7 rounded-[10px] dt:w-[49%] pj:w-[45%] bg-[#081426]'>
+            <div className='dt:w-1/2'>
                 <img src={image} alt="Imagem do projeto" className='w-full rounded-[10px]'/>
             </div>
-            <div className='flex flex-col gap-6 w-1/2'>
-                <h4 className='text-light-blue text-3xl font-fira-code font-semibold'>{title}</h4>
+            <div className='flex flex-col gap-4 dt:w-1/2'>
+                <h4 className='text-light-blue tb:text-3xl text-[27px] font-fira-code font-semibold'>{title}</h4>
                 <div className='flex flex-col  gap-3'>
                     <p className='text-mid-blue text-[16px]'>{description}</p>
                     <div className='flex gap-2 flex-wrap'>
@@ -23,7 +23,7 @@ function Project({image, title, description, technologies, buttons}) {
                         ))}
                     </div>
                 </div>
-                <div className='flex gap-4'>
+                <div className='flex flex-wrap gap-4 mt-2'>
                     {buttons.site && (
                         <a href={buttons.site} target='_blank'>
                             <Button text="Site" icon={siteIcon} title="Acessar site"/>

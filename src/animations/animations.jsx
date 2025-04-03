@@ -24,26 +24,28 @@ const splitText = (text) => {
 }
 
 const slideInFromTop = (duration, delay) => ({
-    initial: { opacity: 0, y: -50 },
-    animate: { opacity: 1, y: 0 },
-    whileInView: { opacity: 1, y: 0 },
-    transition: { 
-        type: "spring",
-        stiffness: 100,
-        duration: duration,
-        delay: delay,
+    hidden: { opacity: 0, y: -50 },
+    visible: { 
+        opacity: 1, 
+        y: 0, 
+        transition: { 
+            type: "spring", 
+            stiffness: 100, 
+            duration: duration, 
+            delay: delay } 
     }
 })
 
 const slideInFromBottom = (duration, delay) => ({
-    initial: { opacity: 0, y: 50 },
-    animate: { opacity: 1, y: 0 },
-    whileInView: { opacity: 1, y: 0 },
-    transition: { 
-        type: "spring",
-        stiffness: 100,
-        duration: duration,
-        delay: delay,
+    hidden: { opacity: 0, y: 50 },
+    visible: { 
+        opacity: 1, 
+        y: 0, 
+        transition: { 
+            type: "spring", 
+            stiffness: 100, 
+            duration: duration, 
+            delay: delay } 
     }
 })
 

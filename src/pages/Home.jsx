@@ -28,6 +28,13 @@ function Home() {
       link.download = "Curriculo.pdf"
       link.click()
     }
+
+    const itemsPerRow = window.innerWidth >= 600 ? 2 : 1
+    const groupedProjects = []
+
+    for (let i = 0; i < projects.length; i += itemsPerRow) {
+      groupedProjects.push(projects.slice(i, i + itemsPerRow))
+    }
     
     return (
       <main className="flex flex-col gap-25 px-7 py-15 min-h-screen bg-dark-blue dt:px-60 nt-lg:px-40 nt-sm:px-30 tb:px-15" id="main-home">
@@ -43,18 +50,18 @@ function Home() {
             <motion.p className='font-poppins text-mid-blue my-9 text-[15px] nt-lg:text-lg nt-sm:text-base tb:text-base' variants={slideInFromLeft(1, 0.8)} initial="hidden" whileInView="visible" viewport={{ once: true }}>
               Eu desenvolvo aplicações web completas, atuando tanto no front-end com HTML, CSS, JS e React, quanto no back-end com Python e Django.
             </motion.p>
-            <motion.div {...slideInFromBottom(1, 1)}>
+            <motion.div variants={slideInFromBottom(1, 1)} initial="hidden" whileInView="visible" viewport={{ once: true }}>
               <Button text="Currículo" icon={downloadIcon} title="Baixar Currículo" onClick={handleDownload}/>
             </motion.div>
           </div>
-          <motion.div className='w-2/5 nt-lg:w-7/20 nt-sm:w-2/5 nt-sm:block hidden' {...slideInFromBottom(1, 0.8)}>
+          <motion.div className='w-2/5 nt-lg:w-7/20 nt-sm:w-2/5 nt-sm:block hidden' variants={slideInFromBottom(1, 0.8)} initial="hidden" whileInView="visible" viewport={{ once: true }}>
             <img src={DevVector} alt="Dev vector"/>
           </motion.div>
         </section>
-        <section id='sobre' className='flex flex-col gap-15'>
-        <motion.h3 className='nt-sm:text-[40px] text-[35px] text-light-blue font-fira-code' variants={slideInFromLeft(2, 1)} initial="hidden" whileInView="visible" viewport={{ once: true }}>Sobre mim</motion.h3>
-          <motion.div className='flex flex-col-reverse nt-sm:flex-row items-center nt-lg:gap-40 gap-15' {...slideInFromTop(2, 1.5)}>
-            <div className='menu:relative nt-lg:w-[30%] nt-sm:w-2/5 tb:w-1/2 mb:w-3/4' id='teste'>
+        <section id='sobre' className='flex flex-col nt-lg:gap-15 gap-7'>
+          <motion.h3 className='nt-sm:text-[40px] text-[35px] text-light-blue tb:text-left text-center font-fira-code' variants={slideInFromLeft(1.5, 0.6)} initial="hidden" whileInView="visible" viewport={{ once: true }}>Sobre mim</motion.h3>
+          <motion.div className='flex flex-col-reverse nt-sm:flex-row items-center nt-lg:gap-40 gap-15' variants={slideInFromTop(2, 0.8)} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+            <div className='menu:relative nt-lg:w-[30%] nt-sm:w-2/5 tb:w-1/2 mb:w-[65%] w-[90%]' id='teste'>
               <img src={AboutPhoto} alt="Photo of the about section" className='w-full'/>
               <div className='menu:block hidden absolute bottom-[-3%] right-[-5%] bg-dark-blue text-bright-green font-poppins p-4 shadow-[5px_5px_5px_#000] z-0'>
                 <p className='text-xl'>18 anos</p>
@@ -75,7 +82,7 @@ function Home() {
               Meu primeiro contato com o mercado de trabalho foi como <span className='text-bright-green'>bolsista no Centro de Soluções Aplicadas (CSA),</span> onde trabalhei com <span className='text-bright-green'>Wordpress</span> e tive a <span className='text-bright-green'>experiência de lidar com um cliente</span> pela primeira vez.
             </p>
           </motion.div>
-          <motion.div className='flex flex-wrap justify-center nt-lg:gap-13 nt-sm:gap-7 gap-10 mt-5 group' initial={{ opacity: 0, y: -50 }}  whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}  transition={{ duration: 1.2 }}>
+          <motion.div className='flex flex-wrap justify-center nt-lg:gap-13 nt-sm:gap-7 gap-10 mt-5 group' variants={slideInFromTop(1.5, 0.4)} initial="hidden" whileInView="visible" viewport={{ once: true }}>
             <img src={html} alt="HTML" className='dt:w-14 nt-lg:w-12 nt-sm:w-10 tb:w-12 w-11 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='HTML'/>
             <img src={css} alt="CSS" className='dt:w-16 nt-lg:w-14 nt-sm:w-11 tb:w-14 w-13 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='CSS'/>
             <img src={tailwind} alt="Tailwind" className='dt:w-19 nt-lg:w-15 nt-sm:w-13 tb:w-15 w-14 h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110' title='Tailwind CSS'/>
@@ -89,9 +96,29 @@ function Home() {
           </motion.div>
         </section>
         <section id='projetos' className='flex flex-col gap-15'>
-          <motion.h3 className='nt-sm:text-[40px] text-[35px] text-light-blue font-fira-code' variants={slideInFromLeft(1, 0.4)} initial="hidden" whileInView="visible" viewport={{ once: true }}>Meus Projetos</motion.h3>
-          <div className='flex justify-between flex-wrap'>
-              {projects.map(project => <Project key={project.title} image={project.image} title={project.title} description={project.description} technologies={project.technologies} buttons={project.buttons}/>)}
+          <motion.h3 className='nt-sm:text-[40px] text-[35px] tb:text-left text-center text-light-blue font-fira-code' variants={slideInFromLeft(1, 0.4)} initial="hidden" whileInView="visible" viewport={{ once: true }}>Meus Projetos</motion.h3>
+          <div className='flex flex-col gap-y-12'>
+            {groupedProjects.map((row, index) => (
+            <motion.div
+              key={index}
+              variants={slideInFromBottom(1, 0.3)}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="flex justify-between flex-wrap"
+            >
+              {row.map((project) => (
+                <Project 
+                  key={project.title}
+                  image={project.image}
+                  title={project.title}
+                  description={project.description}
+                  technologies={project.technologies}
+                  buttons={project.buttons}
+                />
+              ))}
+            </motion.div>
+            ))}
           </div>
         </section>
       </main>
