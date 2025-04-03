@@ -51,7 +51,7 @@ function Header() {
                                     <ul className="flex flex-col items-start gap-10 text-sm">
                                         <li className="cursor-pointer hover:text-bright-green transition duration-400" onClick={() => document.getElementById("sobre")?.scrollIntoView()}>Sobre</li>
                                         <li className="cursor-pointer hover:text-bright-green transition duration-400" onClick={() => document.getElementById("projetos")?.scrollIntoView()}>Projetos</li>
-                                        <li className="cursor-pointer hover:text-bright-green transition duration-400">Contato</li>
+                                        <li className="cursor-pointer hover:text-bright-green transition duration-400" onClick={() => document.getElementById("contato")?.scrollIntoView()}>Contato</li>
                                     </ul>
                                 </motion.nav>
                             </>
@@ -66,7 +66,7 @@ function Header() {
                     <ul className="flex gap-10 text-sm">
                         <li className="cursor-pointer hover:text-bright-green transition duration-400" onClick={() => document.getElementById("sobre")?.scrollIntoView()}>Sobre</li>
                         <li className="cursor-pointer hover:text-bright-green transition duration-400" onClick={() => document.getElementById("projetos")?.scrollIntoView()}>Projetos</li>
-                        <li className="cursor-pointer hover:text-bright-green transition duration-400">Contato</li>
+                        <li className="cursor-pointer hover:text-bright-green transition duration-400" onClick={() => document.getElementById("contato")?.scrollIntoView()}>Contato</li>
                     </ul>
                 </nav>
             )}

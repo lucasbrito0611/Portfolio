@@ -62,7 +62,17 @@ const slideInFromLeft = (duration, delay) => ({
     }
 })
 
-export default slideInFromLeft;
+const slideInFromRight = (duration, delay) => ({
+    hidden: { opacity: 0, x: 50 },
+    visible: { 
+        opacity: 1, 
+        x: 0, 
+        transition: { 
+            type: "spring", 
+            stiffness: 100, 
+            duration: duration, 
+            delay: delay } 
+    }
+})
 
-
-export { container, splitText, slideInFromTop, slideInFromBottom, slideInFromLeft }
+export { container, splitText, slideInFromTop, slideInFromBottom, slideInFromLeft, slideInFromRight }
