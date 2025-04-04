@@ -1,11 +1,24 @@
+import expotecImg from '../assets/projects/expotec.png'
 import lamieImg from '../assets/projects/lamie.png'
-import powerpUpImg from '../assets/projects/powerup.png'
+import powerUpImg from '../assets/projects/powerup.png'
 import adocaoImg from '../assets/projects/adocao.png'
 import climaImg from '../assets/projects/clima.png'
 import psiImg from '../assets/projects/psi.png'
 import consultaCareImg from '../assets/projects/consultacare.png'
 import filmesImg from '../assets/projects/filmes.png'
 import spotifyImg from '../assets/projects/spotify.png'
+import calculadoraImg from '../assets/projects/calculadora.png'
+import toDoListImg from '../assets/projects/to-do-list.png'
+
+const expotec = {
+    image: expotecImg,
+    title: 'Expotec 2024',
+    description: 'Projeto desenvolvido para a Exposição Científica, Tecnológica e Cultural do IFRN.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Wordpress'],
+    buttons: {
+        site: 'https://expotec.cnat.ifrn.edu.br/',
+    }
+}
 
 const lamie = {
     image: lamieImg,
@@ -18,7 +31,7 @@ const lamie = {
 }
 
 const powerUp = {
-    image: powerpUpImg,
+    image: powerUpImg,
     title: 'PowerUP',
     description: 'Projeto acadêmico integrador. E-commerce de suplementos, feito no IFRN.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Python', 'Django', 'API Rest'],
@@ -85,7 +98,7 @@ const filmes = {
 const spotify = {
     image: spotifyImg,
     title: 'Spotify - Clone',
-    description: 'Projeto pessoal de um clone do spotify feito a partir do youtube do Hora de Codar, a fim de praticar JavaScript.',
+    description: 'Projeto pessoal de um clone do spotify feito a partir do youtube da Hashtag Treinamentos, a fim de praticar JavaScript.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     buttons: {
         site: 'https://lucasbrito0611.github.io/Spotify/',
@@ -93,4 +106,26 @@ const spotify = {
     }
 }
 
-export const projects = [lamie, powerUp, adocao, clima, psi, consultaCare, filmes, spotify]
+const calculadora = {
+    image: calculadoraImg,
+    title: 'Calculadora - IFRN',
+    description: 'Projeto pessoal de uma calculadora, a fim de calcular as notas no IFRN. Similar ao app IF Calc.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    buttons: {
+        site: 'https://lucasbrito0611.github.io/Calculadora-IFRN/',
+        github: 'https://github.com/lucasbrito0611/Calculadora-IFRN',
+    }
+}
+
+const toDoList = {
+    image: toDoListImg,
+    title: 'To-Do List',
+    description: 'Projeto pessoal de uma lista para armazenar tarefas. Feito com o intuito de praticar Javascript.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    buttons: {
+        site: 'https://lucasbrito0611.github.io/To-Do-List/',
+        github: 'https://github.com/lucasbrito0611/To-Do-List',
+    }
+}
+
+export const projects = [expotec, lamie, powerUp, adocao, clima, psi, consultaCare, filmes, spotify, calculadora, toDoList]

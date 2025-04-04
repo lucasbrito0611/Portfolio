@@ -131,8 +131,8 @@ function Home() {
           <motion.h3 className='nt-sm:text-[40px] text-[35px] tb:text-left text-center text-light-blue font-fira-code' variants={slideInFromLeft(1, 0.4)} initial="hidden" whileInView="visible" viewport={{ once: true }}>Contato</motion.h3>
           <div className='flex nt-sm:flex-row flex-col items-center nt-lg:gap-60 nt-sm:gap-22 gap-15 '>
             <ContactForm />
-            <motion.div className="relative dt:w-[30%] nt-lg:w-[38%] nt-sm:w-[43%] tb:w-[55%] w-[85%] aspect-square border-[1px] border-bright-green" variants={slideInFromTop(1, 0.4)} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-              <div className="flex flex-col tb:gap-13 gap-9 absolute left-[-3%] top-[-3%] nt-lg:p-10 p-7 w-full h-full aspect-square bg-dark-green">
+            <motion.div className="relative dt:w-[30%] nt-lg:w-[38%] nt-sm:w-[43%] tb:w-[55%] mb-lg:w-[85%] w-full mb:h-auto h-85 aspect-square border-[1px] border-bright-green" variants={slideInFromTop(1, 0.4)} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+              <div className="flex flex-col tb:gap-13 gap-7 absolute left-[-3%] top-[-3%] nt-lg:p-10 p-7 w-full h-full aspect-square bg-dark-green">
                 <motion.h5 className="font-fira-code text-light-blue text-center dt:text-2xl nt-lg:text-[22px] nt-sm:text-[19px] tb:text-[22px] text-lg" variants={slideInFromTop(1, 0.5)} initial="hidden" whileInView="visible" viewport={{ once: true }}>
                   Informações de Contato
                 </motion.h5>

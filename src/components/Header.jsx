@@ -4,7 +4,6 @@ import { FaBars } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { motion, AnimatePresence } from "framer-motion"
 
-
 import logo from '../assets/logo.png'
 
 function Header() {

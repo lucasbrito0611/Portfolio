@@ -12,7 +12,7 @@ function Project({image, title, description, technologies, buttons}) {
                 <img src={image} alt="Imagem do projeto" className='w-full rounded-[10px]'/>
             </div>
             <div className='flex flex-col gap-4 dt:w-1/2'>
-                <h4 className='text-light-blue tb:text-3xl text-[27px] font-fira-code font-semibold'>{title}</h4>
+                <h4 className='text-light-blue text-[27px] font-fira-code font-semibold'>{title}</h4>
                 <div className='flex flex-col  gap-3'>
                     <p className='text-mid-blue text-[16px]'>{description}</p>
                     <div className='flex gap-2 flex-wrap'>
