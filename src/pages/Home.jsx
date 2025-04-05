@@ -28,13 +28,6 @@ import { container, splitText, slideInFromTop, slideInFromBottom, slideInFromLef
 function Home() {
     const downloadIcon = <IoMdDownload />
 
-    const handleDownload = () => {
-      const link = document.createElement("a")
-      link.href = "../../public/Curriculo.pdf"
-      link.download = "Curriculo.pdf"
-      link.click()
-    }
-
     const itemsPerRow = window.innerWidth >= 600 ? 2 : 1
     const groupedProjects = []
 
@@ -57,7 +50,9 @@ function Home() {
               Eu desenvolvo aplicações web completas, atuando tanto no front-end com HTML, CSS, JS e React, quanto no back-end com Python e Django.
             </motion.p>
             <motion.div variants={slideInFromBottom(1, 1)} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-              <Button text="Currículo" icon={downloadIcon} title="Baixar Currículo" onClick={handleDownload}/>
+              <a href="https://drive.google.com/file/d/1TK4XYHg8rBmQERMHZreaefKoPb7i11aP/view?usp=sharing" target='_blank'>
+                <Button text="Currículo" icon={downloadIcon} title="Baixar Currículo"/>
+              </a>
             </motion.div>
           </div>
           <motion.div className='w-2/5 nt-lg:w-7/20 nt-sm:w-2/5 nt-sm:block hidden' variants={slideInFromBottom(1, 0.8)} initial="hidden" whileInView="visible" viewport={{ once: true }}>
