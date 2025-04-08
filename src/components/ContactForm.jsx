@@ -10,14 +10,18 @@ function ContactForm() {
     const form = useRef()
     const [status, setStatus] = useState("")
 
+    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
     const sendEmail = (e) => {
       e.preventDefault()
 
       emailjs.sendForm(
-          "service_tq9dxmi", 
-          "template_yn93386",
+          serviceID, 
+          templateID,
           form.current,
-          "177tKQBAeK0rdE9_5"
+          publicKey
         )
         .then(
           (result) => {
