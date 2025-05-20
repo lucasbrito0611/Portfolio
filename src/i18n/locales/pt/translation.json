@@ -1,0 +1,18 @@
+{
+    "header": {
+        "about": "Sobre",
+        "projects": "Projetos",
+        "contact": "Contato"
+    },
+    "home": {
+        "hero": {
+            "greeting": "Olá, meu nome é",
+            "name": "{{name}}",
+            "position": "Desenvolvedor Full Stack",
+            "description": "Eu desenvolvo aplicações web completas, atuando tanto no front-end com HTML, CSS, JS e React, quanto no back-end com Python e Django.", 
+            "cv_text": "Currículo",
+            "cv_title": "Baixar Currículo"
+        }
+    }
+    
+}

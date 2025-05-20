@@ -1,0 +1,17 @@
+{
+    "header": {
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "home": {
+        "hero": {
+            "greeting": "Hello, my name is",
+            "name": "{{name}}",
+            "position": "Full Stack Developer",
+            "description": "I develop complete web applications, working both on the front-end with HTML, CSS, JS, and React, and on the back-end with Python and Django.",
+            "cv_text": "Resume",
+            "cv_title": "Download Resume"
+        }
+    }
+}
