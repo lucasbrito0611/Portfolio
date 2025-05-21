@@ -39,10 +39,10 @@ function Header() {
                 </ul>
                 <div className="flex gap-5">
                     <button onClick={() => changeLanguage("pt")} className={`cursor-pointer border-b-2 pb-1 ${currentLang === "pt" ? "border-bright-green" : "border-transparent"}`}>
-                        <img src="/flags/br.png" alt="Portuguese" title="Portuguese" className="w-8 h-auto" />
+                        <img src="/flags/br.png" alt="Portuguese" title="Portuguese" className="w-7 h-auto" />
                     </button>
                     <button onClick={() => changeLanguage("en")} className={`cursor-pointer border-b-2 pb-1 ${currentLang === "en" ? "border-bright-green" : "border-transparent"}`}>
-                        <img src="/flags/us.png" alt="English" title="English" className="w-8 h-auto" />
+                        <img src="/flags/us.png" alt="English" title="English" className="w-7 h-auto" />
                     </button>
                 </div>
             </nav>
@@ -79,10 +79,10 @@ function Header() {
                         </ul>
                         <div className="flex gap-5 mt-10">
                             <button onClick={() => changeLanguage("pt")} className={`cursor-pointer border-b-2 pb-1 ${currentLang === "pt" ? "border-bright-green" : "border-transparent"}`}>
-                                <img src="/flags/br.png" alt="Portuguese" title="Portuguese" className="w-8 h-auto" />
+                                <img src="/flags/br.png" alt="Portuguese" title="Portuguese" className="w-6 h-auto" />
                             </button>
                             <button onClick={() => changeLanguage("en")} className={`cursor-pointer border-b-2 pb-1 ${currentLang === "en" ? "border-bright-green" : "border-transparent"}`}>
-                                <img src="/flags/us.png" alt="English" title="English" className="w-8 h-auto" />
+                                <img src="/flags/us.png" alt="English" title="English" className="w-6 h-auto" />
                             </button>
                         </div>
                     </motion.nav>

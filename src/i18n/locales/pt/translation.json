@@ -12,7 +12,85 @@
             "description": "Eu desenvolvo aplicações web completas, atuando tanto no front-end com HTML, CSS, JS e React, quanto no back-end com Python e Django.", 
             "cv_text": "Currículo",
             "cv_title": "Baixar Currículo"
+        },
+        "about": {
+            "title": "Sobre mim",
+            "age": "18 anos",
+            "desktop": {
+                "text_1": "Atualmente estou no 4º e último ano do curso <highlight>Técnico de Nível Médio em Informática para Internet, no IFRN - Natal Central.</highlight> Ao longo do curso, fui desenvolvendo minhas habilidades e aprimorando meus conhecimentos. Hoje, tenho experiência no desenvolvimento web, atuando tanto no <highlight>front-end</highlight> quanto no <highlight>back-end</highlight>. No 3º ano aprendi sobre <highlight>Banco de Dados</highlight> e no 4º ano temos um projeto completo a ser feito com <highlight>React e TypeScript</highlight>, que tenho certeza que irá aprimorar meus conhecimentos nesse framework tão utilizado hoje em dia.",
+                "text_2": "Meu primeiro — e, por enquanto, único — contato com o mercado de trabalho foi como <highlight>bolsista no Centro de Soluções Aplicadas (CSA),</highlight> uma empresa conectada ao IFRN. Durante o trabalho, aprendi a usar diversas ferramentas do <highlight>Wordpress</highlight> e tive a <highlight>experiência de lidar com um cliente</highlight> pela primeira vez."
+            },
+            "mobile": {
+                "text_1": "Estou no 4º ano do curso <highlight>Técnico de Nível Médio em Informática para Internet, no IFRN - Natal Central.</highlight> Tenho experiência no desenvolvimento web, atuando no <highlight>front-end</highlight> e <highlight>back-end</highlight>. No 3º ano aprendi sobre <highlight>Banco de Dados</highlight> e no 4º ano estamos desenvolvendo um projeto completo com <highlight>React e TypeScript</highlight>, que irá aprimorar meus conhecimentos nesse framework tão utilizado.",
+                "text_2": "Meu primeiro contato com o mercado de trabalho foi como <highlight>bolsista no Centro de Soluções Aplicadas (CSA),</highlight> onde trabalhei com <highlight>Wordpress</highlight> e tive a <highlight>experiência de lidar com um cliente</highlight> pela primeira vez."
+            }
+        },
+        "projects": {
+            "title": "Meus Projetos"
+        },
+        "contact": {
+            "title": "Contato",
+            "card_title": "Informações de Contato"
         }
+    },
+    "projects": {
+        "expotec": {
+            "title": "Expotec 2024",
+            "description": "Projeto desenvolvido para a Exposição Científica, Tecnológica e Cultural do IFRN."
+        },
+        "lamie": {
+            "title": "Lamie",
+            "description": "Projeto desenvolvido para o Laboratório de Manutenção de Instalações Elétricas do IFRN - CNAT."
+        },
+        "powerUp": {
+            "title": "PowerUP",
+            "description": "Projeto acadêmico integrador. E-commerce de suplementos, feito no IFRN."
+        },
+        "adoption": {
+            "title": "Adoção",
+            "description": "Projeto acadêmico feito na disciplina de Design Web no IFRN."
+        },
+        "weather": {
+            "title": "Clima",
+            "description": "Projeto pessoal feito para treinar o consumo de API. Uso da API OpenWeather."
+        },
+        "psi": {
+            "title": "Loja - PSI",
+            "description": "Projeto acadêmico para a disciplina de Programação de Sistemas para Internet no IFRN."
+        },
+        "consultaCare": {
+            "title": "Consulta Care",
+            "description": "Projeto acadêmico para a disciplina de Instalação e Configuração de Servidores no IFRN."
+        },
+        "movies": {
+            "title": "Filmes",
+            "description": "Projeto pessoal feito a partir do youtube do Hora de Codar, a fim de praticar React. Usa a API do TMDB."
+        },
+        "spotify": {
+            "title": "Spotify - Clone",
+            "description": "Projeto pessoal de um clone do spotify feito a partir do youtube da Hashtag Treinamentos, a fim de praticar JavaScript."
+        },
+        "calculator": {
+            "title": "Calculadora - IFRN",
+            "description": "Projeto pessoal de uma calculadora, a fim de calcular as notas no IFRN. Similar ao app IF Calc."
+        },
+        "toDoList": {
+            "title": "To-Do List",
+            "description": "Projeto pessoal de uma lista para armazenar tarefas. Feito com o intuito de praticar Javascript."
+        }
+    },
+    "contactForm": {
+        "email_placeholder": "Digite o seu e-mail",
+        "subject_title": "Assunto",
+        "subject_placeholder": "Digite o seu assunto",
+        "message_title": "Message",
+        "message_placeholder": "Digite a sua mensagem",
+        "btn_text": "Enviar"
+    },
+    "footer": {
+        "about": "Sobre",
+        "projects": "Projetos",
+        "contact": "Contato",
+        "text": "Desenvolvido por Lucas Brito, 2025"
     }
-    
 }

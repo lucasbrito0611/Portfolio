@@ -8,7 +8,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 
 import DevVector from '../assets/vetor-dev.png'
 import html from '../assets/skills/html.png'
@@ -64,27 +64,29 @@ function Home() {
           </motion.div>
         </section>
         <section id='sobre' className='flex flex-col nt-lg:gap-15 gap-7'>
-          <motion.h3 className='nt-sm:text-[40px] text-[35px] text-light-blue tb:text-left text-center font-fira-code' variants={slideInFromLeft(1.5, 0.6)} initial="hidden" whileInView="visible" viewport={{ once: true }}>Sobre mim</motion.h3>
+          <motion.h3 className='nt-sm:text-[40px] text-[35px] text-light-blue tb:text-left text-center font-fira-code' variants={slideInFromLeft(1.5, 0.6)} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+            {t('home.about.title')}
+          </motion.h3>
           <motion.div className='flex flex-col-reverse nt-sm:flex-row items-center nt-lg:gap-40 gap-15' variants={slideInFromTop(2, 0.8)} initial="hidden" whileInView="visible" viewport={{ once: true }}>
             <div className='menu:relative nt-lg:w-[30%] nt-sm:w-2/5 tb:w-1/2 mb:w-[65%] w-[90%]' id='teste'>
               <img src={AboutPhoto} alt="Photo of the about section" className='w-full'/>
               <div className='menu:block hidden absolute bottom-[-3%] right-[-5%] bg-dark-blue text-bright-green font-poppins p-4 shadow-[5px_5px_5px_#000] z-0'>
-                <p className='text-xl'>18 anos</p>
+                <p className='text-xl'>{t('home.about.age')}</p>
               </div>
             </div>
             {/* DESKTOP TEXT */}
             <p className='text-mid-blue leading-8 font-poppins text-[15px] nt-lg:text-lg nt-sm:text-base tb:text-base nt-lg:block hidden w-[60%]'>
-              Atualmente estou no 4º e último ano do curso <span className='text-bright-green'>Técnico de Nível Médio em Informática para Internet, no IFRN - Natal Central.</span> Ao longo do curso, fui desenvolvendo minhas habilidades e aprimorando meus conhecimentos. Hoje, tenho experiência no desenvolvimento web, atuando tanto no <span className='text-bright-green'>front-end</span> quanto no <span className='text-bright-green'>back-end</span>. No 3º ano aprendi sobre <span className='text-bright-green'>Banco de Dados</span> e no 4º ano temos um projeto completo a ser feito com <span className='text-bright-green'>React</span>, que tenho certeza que irá aprimorar meus conhecimentos nesse framework tão utilizado hoje em dia.
+              <Trans i18nKey="home.about.desktop.text_1" components={{ highlight: <span className="text-bright-green" /> }} />
               <br />
               <br />
-              Meu primeiro — e, por enquanto, único — contato com o mercado de trabalho foi como <span className='text-bright-green'>bolsista no Centro de Soluções Aplicadas (CSA),</span> uma empresa conectada ao IFRN. Durante o trabalho, aprendi a usar diversas ferramentas do <span className='text-bright-green'>Wordpress</span> e tive a <span className='text-bright-green'>experiência de lidar com um cliente</span> pela primeira vez.
+              <Trans i18nKey="home.about.desktop.text_2" components={{ highlight: <span className="text-bright-green" /> }} />
             </p>
             {/* MOBILE TEXT */}
             <p className='text-mid-blue leading-8 font-poppins text-[15px] nt-lg:text-lg nt-sm:text-base tb:text-base nt-sm:block nt-lg:hidden nt-sm:w-[60%] nt-lg:w-full'>
-              Estou no 4º ano do curso <span className='text-bright-green'>Técnico de Nível Médio em Informática para Internet, no IFRN - Natal Central.</span> Tenho experiência no desenvolvimento web, atuando no <span className='text-bright-green'>front-end</span> e <span className='text-bright-green'>back-end</span>. No 3º ano aprendi sobre <span className='text-bright-green'>Banco de Dados</span> e no 4º ano estamos desenvolvendo um projeto completo com <span className='text-bright-green'>React</span>, que irá aprimorar meus conhecimentos nesse framework tão utilizado.
+              <Trans i18nKey="home.about.mobile.text_1" components={{ highlight: <span className="text-bright-green" /> }} />
               <br />
               <br />
-              Meu primeiro contato com o mercado de trabalho foi como <span className='text-bright-green'>bolsista no Centro de Soluções Aplicadas (CSA),</span> onde trabalhei com <span className='text-bright-green'>Wordpress</span> e tive a <span className='text-bright-green'>experiência de lidar com um cliente</span> pela primeira vez.
+              <Trans i18nKey="home.about.mobile.text_2" components={{ highlight: <span className="text-bright-green" /> }} />
             </p>
           </motion.div>
           <motion.div className='flex flex-wrap justify-center nt-lg:gap-13 nt-sm:gap-7 gap-10 mt-5 group' variants={slideInFromTop(1.5, 0.4)} initial="hidden" whileInView="visible" viewport={{ once: true }}>
@@ -101,7 +103,9 @@ function Home() {
           </motion.div>
         </section>
         <section id='projetos' className='flex flex-col gap-15'>
-          <motion.h3 className='nt-sm:text-[40px] text-[35px] tb:text-left text-center text-light-blue font-fira-code' variants={slideInFromLeft(1, 0.4)} initial="hidden" whileInView="visible" viewport={{ once: true }}>Meus Projetos</motion.h3>
+          <motion.h3 className='nt-sm:text-[40px] text-[35px] tb:text-left text-center text-light-blue font-fira-code' variants={slideInFromLeft(1, 0.4)} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+            Meus Projetos
+          </motion.h3>
           <div className='flex flex-col gap-y-12'>
             {groupedProjects.map((row, index) => (
             <motion.div
@@ -127,13 +131,15 @@ function Home() {
           </div>
         </section>
         <section id='contato' className='flex flex-col gap-15'>
-          <motion.h3 className='nt-sm:text-[40px] text-[35px] tb:text-left text-center text-light-blue font-fira-code' variants={slideInFromLeft(1, 0.4)} initial="hidden" whileInView="visible" viewport={{ once: true }}>Contato</motion.h3>
+          <motion.h3 className='nt-sm:text-[40px] text-[35px] tb:text-left text-center text-light-blue font-fira-code' variants={slideInFromLeft(1, 0.4)} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+            {t('home.contact.title')}
+          </motion.h3>
           <div className='flex nt-sm:flex-row flex-col items-center nt-lg:gap-60 nt-sm:gap-22 gap-15 '>
             <ContactForm />
             <motion.div className="relative dt:w-[30%] nt-lg:w-[38%] nt-sm:w-[43%] tb:w-[55%] mb-lg:w-[85%] w-full mb:h-auto h-85 aspect-square border-[1px] border-bright-green" variants={slideInFromTop(1, 0.4)} initial="hidden" whileInView="visible" viewport={{ once: true }}>
               <div className="flex flex-col tb:gap-13 gap-7 absolute left-[-3%] top-[-3%] nt-lg:p-10 p-7 w-full h-full aspect-square bg-dark-green">
                 <motion.h5 className="font-fira-code text-light-blue text-center dt:text-2xl nt-lg:text-[22px] nt-sm:text-[19px] tb:text-[22px] text-lg" variants={slideInFromTop(1, 0.5)} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-                  Informações de Contato
+                  {t('home.contact.card_title')}
                 </motion.h5>
                 <div className='flex flex-col tb:gap-8 gap-6'>
                   <motion.a href='https://github.com/lucasbrito0611' target='_blank' className='flex items-center gap-4 text-light-blue cursor-pointer' variants={slideInFromRight(1, 0.6)} initial="hidden" whileInView="visible" viewport={{ once: true }}>

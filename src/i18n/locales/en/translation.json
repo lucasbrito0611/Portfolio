@@ -12,6 +12,85 @@
             "description": "I develop complete web applications, working both on the front-end with HTML, CSS, JS, and React, and on the back-end with Python and Django.",
             "cv_text": "Resume",
             "cv_title": "Download Resume"
+        },
+        "about": {
+            "title": "About me",
+            "age": "18 years",
+            "desktop": {
+                "text_1": "I am currently in the 4th and final year of the <highlight>High School Technical Degree in Internet Informatics at IFRN - Natal Central.</highlight> Throughout the course, I have been developing my skills and improving my knowledge. Today, I have experience in web development, working on both the <highlight>front-end</highlight> and <highlight>back-end</highlight>. In the 3rd year, I learned about <highlight>Databases</highlight> and in the 4th year we have a complete project to be done with <highlight>React and Typescript</highlight>, which I am sure will further enhance my knowledge in this widely used framework nowadays.",
+                "text_2": "My first — and, for now, only — experience in the job market was as a <highlight>scholarship holder at the Centro de Soluções Aplicadas (CSA),</highlight> a company connected to IFRN. During this job, I learned to use several <highlight>WordPress</highlight> tools and had the <highlight>experience of dealing with a client</highlight> for the first time."
+            },
+            "mobile": {
+                "text_1": "I am in the 4th year of the <highlight>High School Technical Degree in Internet Informatics at IFRN - Natal Central.</highlight> I have experience in web development, working on both the <highlight>front-end</highlight> and <highlight>back-end</highlight>. In the 3rd year, I learned about <highlight>Databases</highlight> and in the 4th year we are developing a complete project with <highlight>React and TypeScript</highlight>, which will further enhance my knowledge in this widely used framework.",
+                "text_2": "My first contact with the job market was as a <highlight>scholarship holder at the Centro de Soluções Aplicadas (CSA),</highlight> where I worked with <highlight>WordPress</highlight> and had the <highlight>experience of dealing with a client</highlight> for the first time."
+            }
+        },
+        "projects": {
+            "title": "My Projects"
+        },
+        "contact": {
+            "title": "Contact",
+            "card_title": "Contact Information"
         }
+    },
+    "projects": {
+        "expotec": {
+            "title": "Expotec 2024",
+            "description": "Project developed for the Scientific, Technological and Cultural Exhibition of IFRN."
+        },
+        "lamie": {
+            "title": "Lamie",
+            "description": "Project developed for the Electrical Installations Maintenance Laboratory at IFRN - CNAT."
+        },
+        "powerUp": {
+            "title": "PowerUP",
+            "description": "Academic integrative project. Supplement e-commerce, made at IFRN."
+        },
+        "adoption": {
+            "title": "Adoption",
+            "description": "Academic project made in the Web Design subject at IFRN."
+        },
+        "weather": {
+            "title": "Weather",
+            "description": "Personal project made to practice API consumption. Uses the OpenWeather API."
+        },
+        "psi": {
+            "title": "Store - PSI",
+            "description": "Academic project for the Internet Systems Programming subject at IFRN."
+        },
+        "consultaCare": {
+            "title": "Consulta Care",
+            "description": "Academic project for the Server Installation and Configuration subject at IFRN."
+        },
+        "movies": {
+            "title": "Movies",
+            "description": "Personal project made from the Hora de Codar YouTube channel, to practice React. Uses the TMDB API."
+        },
+        "spotify": {
+            "title": "Spotify - Clone",
+            "description": "Personal project of a Spotify clone made from the Hashtag Treinamentos YouTube channel, to practice JavaScript."
+        },
+        "calculator": {
+            "title": "Calculator - IFRN",
+            "description": "Personal project of a calculator, to calculate grades at IFRN. Similar to the IF Calc app."
+        },
+        "toDoList": {
+            "title": "To-Do List",
+            "description": "Personal project of a list to store tasks. Made to practice JavaScript."
+        }
+    },
+    "contactForm": {
+        "email_placeholder": "Type your e-mail",
+        "subject_title": "Subject",
+        "subject_placeholder": "Type your subject",
+        "message_title": "Message",
+        "message_placeholder": "Type your message",
+        "btn_text": "Send"
+    },
+    "footer": {
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact",
+        "text": "Developed by Lucas Brito, 2025"
     }
 }
