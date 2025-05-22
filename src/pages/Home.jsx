@@ -104,7 +104,7 @@ function Home() {
         </section>
         <section id='projetos' className='flex flex-col gap-15'>
           <motion.h3 className='nt-sm:text-[40px] text-[35px] tb:text-left text-center text-light-blue font-fira-code' variants={slideInFromLeft(1, 0.4)} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            Meus Projetos
+            {t('home.contact.title')}
           </motion.h3>
           <div className='flex flex-col gap-y-12'>
             {groupedProjects.map((row, index) => (
