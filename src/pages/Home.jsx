@@ -48,13 +48,13 @@ function Home() {
               {splitText(t("home.hero.name", { name: "Lucas Brito" }))}
             </motion.h1>
             <motion.h4 className='font-poppins text-mid-blue text-base nt-lg:text-2xl nt-sm:text-xl tb:text-2xl mb:text-lg' variants={slideInFromLeft(1, 0.4)} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-              &lt;{t("home.hero.position")}&gt;
+              &lt;/{t("home.hero.position")}&gt;
             </motion.h4>
             <motion.p className='font-poppins text-mid-blue my-9 text-[15px] nt-lg:text-lg nt-sm:text-base tb:text-base' variants={slideInFromLeft(1, 0.8)} initial="hidden" whileInView="visible" viewport={{ once: true }}>
               {t("home.hero.description")}
             </motion.p>
             <motion.div variants={slideInFromBottom(1, 1)} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-              <a href="https://drive.google.com/file/d/1K5oIe50Zd4G-KePJM4C_1tAPsSJrybmn/view?usp=sharing" target='_blank'>
+              <a href="https://drive.google.com/file/d/15tFoiZ-JDQuQJbuQZJoTwkq-YHsa1kdp/view?usp=sharing" target='_blank'>
                 <Button text={t('home.hero.cv_text')} icon={downloadIcon} title={t('home.hero.cv_title')}/>
               </a>
             </motion.div>
