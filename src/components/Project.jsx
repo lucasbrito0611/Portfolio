@@ -33,7 +33,7 @@ function Project({image, title, description, technologies, buttons}) {
                         </a>
                     )}
                     {buttons.github && (
-                        <a href={buttons.github} target='_blank'>
+                        <a href={buttons.github} target='_blank' rel='noopener noreferrer'>
                             <Button text="Github" icon={githubIcon} title="Acessar github"/>
                         </a>
                     )}
