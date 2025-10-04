@@ -161,7 +161,7 @@ function Home() {
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}
-                            className="flex justify-between flex-wrap"
+                            className="flex justify-between gap-y-10 flex-wrap"
                         >
                             {row.map((project) => (
                                 <Project

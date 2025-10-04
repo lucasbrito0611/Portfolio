@@ -18,11 +18,11 @@
             "age": "18 years",
             "desktop": {
                 "text_1": "I am currently in the 4th and final year of the <highlight>High School Technical Degree in Internet Informatics at IFRN - Natal Central.</highlight> Throughout the course, I have been developing my skills and improving my knowledge. Today, I have experience in web development, working on both the <highlight>front-end</highlight> and <highlight>back-end</highlight>. In the 3rd year, I learned about <highlight>Databases</highlight> and in the 4th year we have a complete project to be done with <highlight>React and Typescript</highlight>, which I am sure will further enhance my knowledge in this widely used framework nowadays.",
-                "text_2": "My first contact with the job market was as a <highlight>scholarship holder at the <link1>Centro de Soluções Aplicadas (CSA)</link1>,</highlight> where I learned to use <highlight>WordPress</highlight>. I am currently an <highlight>intern in front-end development at <link2>Maxmeio</link2></highlight>, where I mainly use <highlight>Tailwind and Bootstrap</highlight> on a daily basis."
+                "text_2": "My first contact with the job market was as a <highlight>scholarship holder at the <link1>Centro de Soluções Aplicadas (CSA)</link1>,</highlight> where I learned to use <highlight>WordPress</highlight>. I am currently an <highlight>intern in front-end development at <link2>Maxmeio</link2></highlight>, where I mainly use <highlight>Tailwind and Bootstrap</highlight> integrated with <highlight>Laravel</highlight> on a daily basis."
             },
             "mobile": {
                 "text_1": "I am in the 4th year of the <highlight>High School Technical Degree in Internet Informatics at IFRN - Natal Central.</highlight> I have experience in web development, working on both the <highlight>front-end</highlight> and <highlight>back-end</highlight>. In the 3rd year, I learned about <highlight>Databases</highlight> and in the 4th year we are developing a complete project with <highlight>React and TypeScript</highlight>, which will further enhance my knowledge in this widely used framework.",
-                "text_2": "My first contact with the job market was as a <highlight>scholarship holder at the <link1>Centro de Soluções Aplicadas (CSA)</link1>,</highlight> where I worked using <highlight>WordPress</highlight>. I am currently an <highlight>intern in front-end development at <link2>Maxmeio</link2></highlight>, where I mainly use <highlight>Tailwind and Bootstrap</highlight> on a daily basis."
+                "text_2": "My first contact with the job market was as a <highlight>scholarship holder at the <link1>Centro de Soluções Aplicadas (CSA)</link1>,</highlight> where I worked using <highlight>WordPress</highlight>. I am currently an <highlight>intern in front-end development at <link2>Maxmeio</link2></highlight>, where I mainly use <highlight>Tailwind and Bootstrap</highlight> integrated with <highlight>Laravel</highlight> on a daily basis."
             }
         },
         "projects": {
@@ -34,8 +34,16 @@
         }
     },
     "projects": {
+        "sindifern": {
+            "title": "Sindifern - 2025",
+            "description": "Front-end programming for the Union of Tax Auditors of RN website."
+        },
+        "diaDosPais": {
+            "title": "Midway Mall - Father's Day 2025",
+            "description": "Front-end implementation of the 2025 Midway Father's Day landing page."
+        },
         "expotec": {
-            "title": "Expotec 2024",
+            "title": "Expotec - 2024",
             "description": "Project developed for the Scientific, Technological and Cultural Exhibition of IFRN."
         },
         "lamie": {

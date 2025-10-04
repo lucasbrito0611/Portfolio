@@ -18,11 +18,11 @@
             "age": "18 anos",
             "desktop": {
                 "text_1": "Atualmente estou no 4º e último ano do curso <highlight>Técnico de Nível Médio em Informática para Internet, no IFRN - Natal Central.</highlight> Ao longo do curso, fui desenvolvendo minhas habilidades e aprimorando meus conhecimentos. Hoje, tenho experiência no desenvolvimento web, atuando tanto no <highlight>front-end</highlight> quanto no <highlight>back-end</highlight>. No 3º ano aprendi sobre <highlight>Banco de Dados</highlight> e no 4º ano temos um projeto completo a ser feito com <highlight>React e TypeScript</highlight>, que tenho certeza que irá aprimorar meus conhecimentos nesse framework tão utilizado hoje em dia.",
-                "text_2": "Meu primeiro contato com o mercado de trabalho foi como <highlight>bolsista no <link1>Centro de Soluções Aplicadas (CSA)</link1>,</highlight> onde aprendi a utilizar o <highlight>Wordpress</highlight>. Atualmente sou <highlight>estagiário de desenvolvimento front-end na <link2>Maxmeio</link2> </highlight>, onde utilizo principalmente <highlight>Tailwind e Bootstrap</highlight> no dia a dia."
+                "text_2": "Meu primeiro contato com o mercado de trabalho foi como <highlight>bolsista no <link1>Centro de Soluções Aplicadas (CSA)</link1>,</highlight> onde aprendi a utilizar o <highlight>Wordpress</highlight>. Atualmente sou <highlight>estagiário de desenvolvimento front-end na <link2>Maxmeio</link2> </highlight>, onde utilizo principalmente <highlight>Tailwind e Bootstrap</highlight> integrados ao <highlight>Laravel</highlight> no dia a dia."
             },
             "mobile": {
                 "text_1": "Estou no 4º ano do curso <highlight>Técnico de Nível Médio em Informática para Internet, no IFRN - Natal Central.</highlight> Tenho experiência no desenvolvimento web, atuando no <highlight>front-end</highlight> e <highlight>back-end</highlight>. No 3º ano aprendi sobre <highlight>Banco de Dados</highlight> e no 4º ano estamos desenvolvendo um projeto completo com <highlight>React e TypeScript</highlight>, que irá aprimorar meus conhecimentos nesse framework tão utilizado.",
-                "text_2": "Meu primeiro contato com o mercado de trabalho foi como <highlight>bolsista no <link1>Centro de Soluções Aplicadas (CSA)</link1>,</highlight> onde trabalhei com <highlight>Wordpress</highlight>. Atualmente sou <highlight>estagiário de desenvolvimento front-end na <link2>Maxmeio</link2> </highlight>, onde utilizo principalmente <highlight>Tailwind e Bootstrap</highlight> no dia a dia."
+                "text_2": "Meu primeiro contato com o mercado de trabalho foi como <highlight>bolsista no <link1>Centro de Soluções Aplicadas (CSA)</link1>,</highlight> onde trabalhei com <highlight>Wordpress</highlight>. Atualmente sou <highlight>estagiário de desenvolvimento front-end na <link2>Maxmeio</link2> </highlight>, onde utilizo principalmente <highlight>Tailwind e Bootstrap</highlight> integrados ao <highlight>Laravel</highlight> no dia a dia."
             }
         },
         "projects": {
@@ -34,8 +34,16 @@
         }
     },
     "projects": {
+        "sindifern": {
+            "title": "Sindifern - 2025",
+            "description": "Programação do front-end do site do Sindicato dos Auditores Fiscais do RN."
+        },
+        "diaDosPais": {
+            "title": "Midway Mall - Dia dos Pais 2025",
+            "description": "Implementação do front-end da landing page do dia dos pais do Midway de 2025."
+        },
         "expotec": {
-            "title": "Expotec 2024",
+            "title": "Expotec - 2024",
             "description": "Projeto desenvolvido para a Exposição Científica, Tecnológica e Cultural do IFRN."
         },
         "lamie": {

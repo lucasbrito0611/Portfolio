@@ -1,3 +1,5 @@
+import sindifernImg from '../assets/projects/sindifern.png'
+import diadosPaisImg from '../assets/projects/dia-dos-pais.png'
 import expotecImg from '../assets/projects/expotec.png'
 import lamieImg from '../assets/projects/lamie.png'
 import powerUpImg from '../assets/projects/powerup.png'
@@ -9,6 +11,26 @@ import filmesImg from '../assets/projects/filmes.png'
 import spotifyImg from '../assets/projects/spotify.png'
 import calculadoraImg from '../assets/projects/calculadora.png'
 import toDoListImg from '../assets/projects/to-do-list.png'
+
+const sindifern = {
+    image: sindifernImg,
+    title: 'projects.sindifern.title',
+    description: 'projects.sindifern.description',
+    technologies: ['HTML', 'Tailwind', 'JavaScript', 'Laravel'],
+    buttons: {
+        site: 'https://sindifern.org.br/',
+    }
+}
+
+const diaDosPais = {
+    image: diadosPaisImg,
+    title: 'projects.diaDosPais.title',
+    description: 'projects.diaDosPais.description',
+    technologies: ['React', 'TypeScript', 'Tailwind', 'API Rest'],
+    buttons: {
+        site: 'https://www.midwaymall.com.br/dia-dos-pais/',
+    }
+}
 
 const expotec = {
     image: expotecImg,
@@ -128,4 +150,18 @@ const toDoList = {
     }
 }
 
-export const projects = [expotec, lamie, powerUp, adocao, clima, psi, consultaCare, filmes, spotify, calculadora, toDoList]
+export const projects = [
+    sindifern, 
+    diaDosPais, 
+    expotec, 
+    lamie, 
+    powerUp, 
+    adocao, 
+    clima, 
+    psi, 
+    consultaCare, 
+    filmes, 
+    spotify, 
+    calculadora, 
+    toDoList
+]
