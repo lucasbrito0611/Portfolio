@@ -28,3 +28,9 @@
 * {
   box-sizing: border-box;
 }
+
+@layer components {
+  .skills {
+    @apply h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110;
+  }
+}
