@@ -9,19 +9,19 @@
             "greeting": "Olá, meu nome é",
             "name": "{{name}}",
             "position": "Desenvolvedor Full Stack",
-            "description": "Eu desenvolvo aplicações web completas, atuando tanto no front-end com HTML, CSS, JS e React, quanto no back-end com Python e Django.", 
+            "description": "Técnico em Informática para Internet, eu desenvolvo aplicações web completas, atuando tanto no front-end com React, JS e TS, quanto no back-end com Python e Django REST.", 
             "cv_text": "Currículo",
             "cv_title": "Baixar Currículo"
         },
         "about": {
             "title": "Sobre Mim",
-            "age": "18 anos",
+            "age": "19 anos",
             "desktop": {
-                "text_1": "Atualmente estou no 4º e último ano do curso <highlight>Técnico de Nível Médio em Informática para Internet, no IFRN - Natal Central.</highlight> Ao longo do curso, fui desenvolvendo minhas habilidades e aprimorando meus conhecimentos. Hoje, tenho experiência no desenvolvimento web, atuando tanto no <highlight>front-end</highlight> quanto no <highlight>back-end</highlight>. No 3º ano aprendi sobre <highlight>Banco de Dados</highlight> e no 4º ano temos um projeto completo a ser feito com <highlight>React e TypeScript</highlight>, que tenho certeza que irá aprimorar meus conhecimentos nesse framework tão utilizado hoje em dia.",
+                "text_1": "Sou <highlight>Técnico em Informática para Internet, formado pelo IFRN.</highlight> Ao longo do curso, fui desenvolvendo minhas habilidades e aprimorando meus conhecimentos. Hoje, tenho experiência no desenvolvimento web, com atuações tanto no <highlight>front-end</highlight> quanto no <highlight>back-end</highlight>. Durante os 4 anos do curso, pude aprender a trabalhar em equipe e aplicar os conhecimentos adquiridos em diversos projetos. Aprendi sobre <highlight>Banco de Dados</highlight>, além de realizar um projeto completo com <highlight>React, TypeScript e Django REST</highlight>, que me ajudou a consolidar ainda mais meus conhecimentos.",
                 "text_2": "Meu primeiro contato com o mercado de trabalho foi como <highlight>bolsista no <link1>Centro de Soluções Aplicadas (CSA)</link1>,</highlight> onde aprendi a utilizar o <highlight>Wordpress</highlight>. Atualmente sou <highlight>estagiário de desenvolvimento front-end na <link2>Maxmeio</link2> </highlight>, onde utilizo principalmente <highlight>Tailwind e Bootstrap</highlight> integrados ao <highlight>Laravel</highlight> no dia a dia."
             },
             "mobile": {
-                "text_1": "Estou no 4º ano do curso <highlight>Técnico de Nível Médio em Informática para Internet, no IFRN - Natal Central.</highlight> Tenho experiência no desenvolvimento web, atuando no <highlight>front-end</highlight> e <highlight>back-end</highlight>. No 3º ano aprendi sobre <highlight>Banco de Dados</highlight> e no 4º ano estamos desenvolvendo um projeto completo com <highlight>React e TypeScript</highlight>, que irá aprimorar meus conhecimentos nesse framework tão utilizado.",
+                "text_1": "Sou <highlight>Técnico em Informática para Internet, formado pelo IFRN.</highlight> Tenho experiência no desenvolvimento web, com atuações no <highlight>front-end</highlight> e no <highlight>back-end</highlight>. Aprendi sobre <highlight>Banco de Dados</highlight>, além de realizar um projeto completo com <highlight>React, TypeScript e Django REST</highlight>, que me ajudou a consolidar ainda mais meus conhecimentos.",
                 "text_2": "Meu primeiro contato com o mercado de trabalho foi como <highlight>bolsista no <link1>Centro de Soluções Aplicadas (CSA)</link1>,</highlight> onde trabalhei com <highlight>Wordpress</highlight>. Atualmente sou <highlight>estagiário de desenvolvimento front-end na <link2>Maxmeio</link2> </highlight>, onde utilizo principalmente <highlight>Tailwind e Bootstrap</highlight> integrados ao <highlight>Laravel</highlight> no dia a dia."
             }
         },

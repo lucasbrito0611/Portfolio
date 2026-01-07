@@ -9,19 +9,19 @@
             "greeting": "Hello, my name is",
             "name": "{{name}}",
             "position": "Full Stack Developer",
-            "description": "I develop complete web applications, working both on the front-end with HTML, CSS, JS, and React, and on the back-end with Python and Django.",
+            "description": "Computer Technician specialized in Internet Technologies, I develop complete web applications, working both on the front-end with React, JS and TS, and on the back-end with Python and Django REST.",
             "cv_text": "Resume",
             "cv_title": "Download Resume"
         },
         "about": {
             "title": "About Me",
-            "age": "18 years",
+            "age": "19 years",
             "desktop": {
-                "text_1": "I am currently in the 4th and final year of the <highlight>High School Technical Degree in Internet Informatics at IFRN - Natal Central.</highlight> Throughout the course, I have been developing my skills and improving my knowledge. Today, I have experience in web development, working on both the <highlight>front-end</highlight> and <highlight>back-end</highlight>. In the 3rd year, I learned about <highlight>Databases</highlight> and in the 4th year we have a complete project to be done with <highlight>React and Typescript</highlight>, which I am sure will further enhance my knowledge in this widely used framework nowadays.",
+                "text_1": "I am a <highlight>Computer Technician specialized in Internet Technologies, certified by IFRN.</highlight> Throughout the course, I have been developing my skills and improving my knowledge. Today, I have experience in web development, working on both the <highlight>front-end</highlight> and <highlight>back-end</highlight>. During the four years of the program, I was able to learn how to work as part of a team and apply the knowledge I gained in various projects. I learned about <highlight>Databases</highlight> and also completed a full project using <highlight>React, TypeScript, and Django REST</highlight>, which helped me further solidify my skills.",
                 "text_2": "My first contact with the job market was as a <highlight>scholarship holder at the <link1>Centro de Soluções Aplicadas (CSA)</link1>,</highlight> where I learned to use <highlight>WordPress</highlight>. I am currently an <highlight>intern in front-end development at <link2>Maxmeio</link2></highlight>, where I mainly use <highlight>Tailwind and Bootstrap</highlight> integrated with <highlight>Laravel</highlight> on a daily basis."
             },
             "mobile": {
-                "text_1": "I am in the 4th year of the <highlight>High School Technical Degree in Internet Informatics at IFRN - Natal Central.</highlight> I have experience in web development, working on both the <highlight>front-end</highlight> and <highlight>back-end</highlight>. In the 3rd year, I learned about <highlight>Databases</highlight> and in the 4th year we are developing a complete project with <highlight>React and TypeScript</highlight>, which will further enhance my knowledge in this widely used framework.",
+                "text_1": "I am a <highlight>Computer Technician specialized in Internet Technologies, certified by IFRN.</highlight> I have experience in web development, working on both the <highlight>front-end</highlight> and <highlight>back-end</highlight>. I learned about <highlight>Databases</highlight> and also completed a full project using <highlight>React, TypeScript, and Django REST</highlight>, which helped me further solidify my skills.",
                 "text_2": "My first contact with the job market was as a <highlight>scholarship holder at the <link1>Centro de Soluções Aplicadas (CSA)</link1>,</highlight> where I worked using <highlight>WordPress</highlight>. I am currently an <highlight>intern in front-end development at <link2>Maxmeio</link2></highlight>, where I mainly use <highlight>Tailwind and Bootstrap</highlight> integrated with <highlight>Laravel</highlight> on a daily basis."
             }
         },
