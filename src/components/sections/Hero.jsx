@@ -6,6 +6,7 @@ import DevVector from '../../assets/vetor-dev.png'
 
 import Button from '../../components/Button'
 import { container, splitText, slideInFromBottom, slideInFromLeft } from "../../animations/animations"
+import SplitText from "../SplitText";
 
 
 const Hero = () => {
@@ -15,12 +16,38 @@ const Hero = () => {
 	return (
         <section className='flex justify-between items-center'>
             <div className='dt:w-1/2 nt-sm:w-[55%] w-full'>
-                <motion.p className='font-fira-code text-bright-green flex gap-[2px] whitespace-pre' variants={container} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-                    {splitText(t("home.hero.greeting"))}
-                </motion.p>
-                <motion.h1 className='font-poppins text-light-blue my-2 text-5xl dt:text-9xl nt-lg:text-8xl nt-sm:text-[80px] tb:text-8xl mb:text-6xl flex gap-[2px] whitespace-pre' variants={container} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-                    {splitText(t("home.hero.name", { name: "Lucas Brito" }))}
-                </motion.h1>
+                <div className="block">
+                    <SplitText
+                        text={t("home.hero.greeting")}
+                        as="p"
+                        className="font-fira-code text-bright-green whitespace-pre"
+                        delay={100}
+                        duration={0.6}
+                        ease="power3.out"
+                        splitType="chars"
+                        from={{ opacity: 0, y: 20 }}
+                        to={{ opacity: 1, y: 0 }}
+                        threshold={0.1}
+                        rootMargin="-100px"
+                    />
+                </div>
+
+                <div className="block">
+                    <SplitText
+                        text={t("home.hero.name", { name: "Lucas Brito" })}
+                        as="h1"
+                        className="font-poppins text-light-blue my-2 text-5xl dt:text-9xl nt-lg:text-8xl nt-sm:text-[80px] tb:text-8xl mb:text-6xl whitespace-pre"
+                        delay={150}
+                        duration={0.3}
+                        ease="power3.out"
+                        splitType="chars"
+                        from={{ opacity: 0, y: 20 }}
+                        to={{ opacity: 1, y: 0 }}
+                        threshold={0.1}
+                        rootMargin="-100px"
+                    />
+                </div>
+
                 <motion.h4 className='font-poppins text-mid-blue text-base nt-lg:text-2xl nt-sm:text-xl tb:text-2xl mb:text-lg' variants={slideInFromLeft(1, 0.4)} initial="hidden" whileInView="visible" viewport={{ once: true }}>
                     &lt;/{t("home.hero.position")}&gt;
                 </motion.h4>
