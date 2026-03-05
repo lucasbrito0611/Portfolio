@@ -31,6 +31,22 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #0A192F inset !important;
+  -webkit-text-fill-color: #A8B3D3 !important;
+  transition: background-color 5000s ease-in-out 0s;
+  caret-color: #A8B3D3;
+}
+
 @layer components {
   .skills {
     @apply h-auto transition-all duration-300 group-hover:opacity-50 hover:opacity-100 hover:scale-110;

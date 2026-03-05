@@ -9,7 +9,7 @@
             "greeting": "Olá, meu nome é",
             "name": "{{name}}",
             "position": "Desenvolvedor Full Stack",
-            "description": "Técnico em Informática para Internet, eu desenvolvo aplicações web completas, atuando tanto no front-end com React, JS e TS, quanto no back-end com Python e Django REST.", 
+            "description": "Técnico em Informática para Internet, eu desenvolvo aplicações web completas, atuando tanto no front-end com React, JS e TS, quanto no back-end com Python + Django REST e PHP + Laravel.", 
             "cv_text": "Currículo",
             "cv_title": "Baixar Currículo"
         },

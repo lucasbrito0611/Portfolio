@@ -79,14 +79,15 @@ const Skills = () => {
                 {[...Array(3)].map((_, i) => (
                 <div key={i} className="flex items-center nt-lg:gap-14 gap-10 px-5">
                     {skills.map((skill) => (
-                    <img
-                        key={skill.alt}
-                        src={skill.src}
-                        alt={skill.alt}
-                        className={`${skill.className} h-auto select-none`}
-                        title={skill.title}
-                        draggable={false}
-                    />
+                    <a href={skill.href} target="_blank" rel="noopener noreferrer">
+                        <img
+                            key={skill.alt}
+                            src={skill.src}
+                            alt={skill.alt}
+                            className={`${skill.className} h-auto select-none hover:scale-120 transition-all duration-300`}
+                            draggable={false}
+                        />
+                    </a>
                     ))}
                 </div>
                 ))}
