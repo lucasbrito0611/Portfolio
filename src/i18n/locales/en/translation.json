@@ -11,7 +11,8 @@
             "position": "Full Stack Developer",
             "description": "Computer Technician specialized in Internet Technologies, I develop complete web applications, working both on the front-end with React, JS and TS, and on the back-end with Python + Django REST and PHP + Laravel.",
             "cv_text": "Resume",
-            "cv_title": "Download Resume"
+            "cv_title": "Download Resume",
+            "cv_link": "https://drive.google.com/file/d/1gR84H48gWxPHC7fG3CwGs8xQZJY87JIe/view?usp=drive_link"
         },
         "about": {
             "title": "About Me",
@@ -34,6 +35,10 @@
         }
     },
     "projects": {
+        "maxchat": {
+            "title": "LP - MaxChat",
+            "description": "Development of the landing page for the MaxChat product of the company Maxmeio."
+        },
         "sindifern": {
             "title": "Sindifern - 2025",
             "description": "Front-end programming for the Union of Tax Auditors of RN website."

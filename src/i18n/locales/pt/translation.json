@@ -11,7 +11,8 @@
             "position": "Desenvolvedor Full Stack",
             "description": "Técnico em Informática para Internet, eu desenvolvo aplicações web completas, atuando tanto no front-end com React, JS e TS, quanto no back-end com Python + Django REST e PHP + Laravel.", 
             "cv_text": "Currículo",
-            "cv_title": "Baixar Currículo"
+            "cv_title": "Baixar Currículo",
+            "cv_link": "https://drive.google.com/file/d/15tFoiZ-JDQuQJbuQZJoTwkq-YHsa1kdp/view?usp=sharing"
         },
         "about": {
             "title": "Sobre Mim",
@@ -34,6 +35,10 @@
         }
     },
     "projects": {
+        "maxchat": {
+            "title": "LP - MaxChat",
+            "description": "Desenvolvimento da landing page do produto MaxChat da empresa Maxmeio."
+        },
         "sindifern": {
             "title": "Sindifern - 2025",
             "description": "Programação do front-end do site do Sindicato dos Auditores Fiscais do RN."

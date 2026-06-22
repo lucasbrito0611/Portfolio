@@ -1,3 +1,4 @@
+import maxchatImg from '../assets/projects/maxchat.png'
 import sindifernImg from '../assets/projects/sindifern.png'
 import diadosPaisImg from '../assets/projects/dia-dos-pais.png'
 import expotecImg from '../assets/projects/expotec.png'
@@ -12,11 +13,21 @@ import spotifyImg from '../assets/projects/spotify.png'
 import calculadoraImg from '../assets/projects/calculadora.png'
 import toDoListImg from '../assets/projects/to-do-list.png'
 
+const maxchat = {
+    image: maxchatImg,
+    title: 'projects.maxchat.title',
+    description: 'projects.maxchat.description',
+    technologies: ['HTML', 'TailwindCSS', 'JavaScript', 'Laravel'],
+    buttons: {
+        site: 'https://maxchat.maxads.digital/',
+    }
+}
+
 const sindifern = {
     image: sindifernImg,
     title: 'projects.sindifern.title',
     description: 'projects.sindifern.description',
-    technologies: ['HTML', 'Tailwind', 'JavaScript', 'Laravel'],
+    technologies: ['HTML', 'TailwindCSS', 'JavaScript', 'Laravel'],
     buttons: {
         site: 'https://sindifern.org.br/',
     }
@@ -26,9 +37,8 @@ const diaDosPais = {
     image: diadosPaisImg,
     title: 'projects.diaDosPais.title',
     description: 'projects.diaDosPais.description',
-    technologies: ['React', 'TypeScript', 'Tailwind', 'API Rest'],
+    technologies: ['React', 'TypeScript', 'TailwindCSS', 'API Rest'],
     buttons: {
-        site: 'https://www.midwaymall.com.br/dia-dos-pais/',
     }
 }
 
@@ -151,6 +161,7 @@ const toDoList = {
 }
 
 export const projects = [
+    maxchat,
     sindifern, 
     diaDosPais, 
     expotec, 
