@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FiEye, FiEyeOff } from "react-icons/fi";
@@ -13,6 +13,14 @@ function AdminLoginModal() {
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
+
+  // Bloqueia o scroll da página enquanto o modal de login estiver na tela
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

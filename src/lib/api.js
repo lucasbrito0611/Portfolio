@@ -24,6 +24,15 @@ api.interceptors.response.use(
         if (error.response?.status === 401) {
             localStorage.removeItem('admin_token');
         }
+
+        // Extrai a mensagem de validação do NestJS, se existir
+        if (error.response?.data?.message) {
+            const nestMessage = error.response.data.message;
+            error.message = Array.isArray(nestMessage) 
+                ? nestMessage.join(', ') 
+                : nestMessage;
+        }
+
         return Promise.reject(error);
     }
 );
