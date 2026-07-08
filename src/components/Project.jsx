@@ -1,10 +1,9 @@
-import { useTranslation } from 'react-i18next';
 import { IoIosLink } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
+
 import Button from '../components/Button.jsx'
 
 function Project({image, title, description, technologies, buttons}) {
-    const { t } = useTranslation()
 
     const siteIcon = <IoIosLink />
     const githubIcon = <FaGithub />
@@ -15,9 +14,9 @@ function Project({image, title, description, technologies, buttons}) {
                 <img src={image} alt="Imagem do projeto" className='w-full aspect-[390/250] object-cover rounded-[10px]'/>
             </div>
             <div className='flex flex-col gap-4 dt:w-1/2'>
-                <h4 className='text-light-blue text-[27px] font-fira-code font-semibold'>{t(title)}</h4>
+                <h4 className='text-light-blue text-[27px] font-fira-code font-semibold'>{title}</h4>
                 <div className='flex flex-col  gap-3'>
-                    <p className='text-mid-blue text-[16px]'>{t(description)}</p>
+                    <p className='text-mid-blue text-[16px]'>{description}</p>
                     <div className='flex gap-2 flex-wrap'>
                         {technologies.map((technology, index) => (
                             <div key={index} className='px-2.5 py-1 text-bright-green text-xs bg-dark-green rounded-[60px]'>

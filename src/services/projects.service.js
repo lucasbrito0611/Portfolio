@@ -14,3 +14,6 @@ export const updateProject = (id, data) => api.patch(`/projects/${id}`, data).th
 
 /** Remove um projeto pelo ID (requer JWT). */
 export const deleteProject = (id) => api.delete(`/projects/${id}`);
+
+// Reordena múltiplos projetos de uma vez (requer JWT).
+export const reorderProjects = (items) => api.patch('/projects/reorder', { items });

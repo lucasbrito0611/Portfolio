@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { getAllProjects, createProject, updateProject, deleteProject } from '../../../services/projects.service';
+import { getAllProjects, createProject, updateProject, deleteProject, reorderProjects } from '../../../services/projects.service';
 import ProjectsTable from './ProjectsTable';
 import ProjectForm from './ProjectForm';
 
@@ -14,6 +14,9 @@ function ProjectsModule() {
     const [formError, setFormError] = useState(null);
 
     const [deletingId, setDeletingId] = useState(null);
+
+    // Estado do modo de reordenação (ativado pelo botão ↕)
+    const [isReorderMode, setIsReorderMode] = useState(false);
 
     const fetchProjects = useCallback(async () => {
         try {
@@ -86,6 +89,21 @@ function ProjectsModule() {
         }
     };
 
+    const handleReorder = async (newOrderIds) => {
+        const reordered = newOrderIds.map((id) => projects.find((p) => p.id === id));
+        const previousProjects = projects;
+        setProjects(reordered);
+
+        const items = newOrderIds.map((id, index) => ({ id, order: index }));
+
+        try {
+            await reorderProjects(items);
+        } catch (err) {
+            setProjects(previousProjects);
+            alert(`Erro ao reordenar: ${err.message}`);
+        }
+    };
+
     // ─── Render ────────────────────────────────────────────────────────────────
 
     return (
@@ -100,19 +118,41 @@ function ProjectsModule() {
                         {projects.length} {projects.length === 1 ? 'projeto cadastrado' : 'projetos cadastrados'}
                     </p>
                 </div>
-                <button
-                    onClick={handleOpenCreate}
-                    className="
-                        flex items-center gap-2 px-4 py-2 rounded-md
-                        bg-bright-green text-dark-blue font-fira-code text-xs font-semibold
-                        hover:bg-bright-green/90 transition-all duration-150 cursor-pointer
-                    "
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                    </svg>
-                    Novo Projeto
-                </button>
+                <div className="flex items-center gap-2">
+                    {/* Botão toggle para ativar/desativar modo de reordenação */}
+                    <button
+                        onClick={() => setIsReorderMode((prev) => !prev)}
+                        title={isReorderMode ? 'Desativar reordenação' : 'Ativar reordenação'}
+                        className={`
+                            flex items-center gap-2 px-4 py-2 rounded-md
+                            font-fira-code text-xs font-semibold
+                            transition-all duration-150 cursor-pointer
+                            ${
+                                isReorderMode
+                                    ? 'bg-bright-green/20 text-bright-green border border-bright-green/40 hover:bg-bright-green/30'
+                                    : 'bg-transparent text-mid-blue border border-mid-blue/20 hover:border-mid-blue/40 hover:text-light-blue'
+                            }
+                        `}
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M8 7l4-4m0 0l4 4m-4-4v18M16 17l-4 4m0 0l-4-4m4 4V3" />
+                        </svg>
+                        {isReorderMode ? 'Reordenando...' : 'Reordenar'}
+                    </button>
+                    <button
+                        onClick={handleOpenCreate}
+                        className="
+                            flex items-center gap-2 px-4 py-2 rounded-md
+                            bg-bright-green text-dark-blue font-fira-code text-xs font-semibold
+                            hover:bg-bright-green/90 transition-all duration-150 cursor-pointer
+                        "
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                        Novo Projeto
+                    </button>
+                </div>
             </div>
 
             {error && (
@@ -130,6 +170,8 @@ function ProjectsModule() {
                 onEdit={handleOpenEdit}
                 onDelete={handleDelete}
                 deletingId={deletingId}
+                isReorderMode={isReorderMode}
+                onReorder={handleReorder}
             />
 
             <ProjectForm

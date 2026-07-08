@@ -14,3 +14,6 @@ export const updateSkill = (id, data) => api.patch(`/skills/${id}`, data).then((
 
 /** Remove uma skill pelo ID (requer JWT). */
 export const deleteSkill = (id) => api.delete(`/skills/${id}`);
+
+// Reordena múltiplas skills de uma vez (requer JWT).
+export const reorderSkills = (items) => api.patch('/skills/reorder', { items });
