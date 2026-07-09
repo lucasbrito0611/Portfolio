@@ -2,7 +2,9 @@ import { useAuth } from "../context/AuthContext";
 import AdminLoginModal from "../components/AdminLoginModal";
 
 function ProtectedRoute({ children }) {
-  const { isAuthenticated } = useAuth();
+  const { isAuthenticated, isCheckingAuth } = useAuth();
+
+  if (isCheckingAuth) return null;
 
   if (!isAuthenticated) {
     return <AdminLoginModal />;

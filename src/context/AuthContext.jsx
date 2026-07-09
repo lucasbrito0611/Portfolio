@@ -1,24 +1,35 @@
-import { createContext, useContext, useState, useCallback } from 'react';
+import { createContext, useContext, useState, useCallback, useEffect } from 'react';
+import api from '../lib/api';
 
 const AuthContext = createContext(null);
 
 export function AuthProvider({ children }) {
-    const [token, setToken] = useState(() => localStorage.getItem('admin_token'));
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-    const login = useCallback((jwt) => {
-        localStorage.setItem('admin_token', jwt);
-        setToken(jwt);
+    const [isCheckingAuth, setIsCheckingAuth] = useState(true);
+
+    useEffect(() => {
+        api.get('/auth/me')
+            .then(() => setIsAuthenticated(true))
+            .catch(() => setIsAuthenticated(false))
+            .finally(() => setIsCheckingAuth(false));
     }, []);
 
-    const logout = useCallback(() => {
-        localStorage.removeItem('admin_token');
-        setToken(null);
+    const login = useCallback(() => {
+        setIsAuthenticated(true);
     }, []);
-
-    const isAuthenticated = Boolean(token);
+    const logout = useCallback(async () => {
+        try {
+            await api.post('/auth/logout');
+        } catch {
+            console.error("Error logging out");
+        } finally {
+            setIsAuthenticated(false);
+        }
+    }, []);
 
     return (
-        <AuthContext.Provider value={{ token, isAuthenticated, login, logout }}>
+        <AuthContext.Provider value={{ isAuthenticated, isCheckingAuth, login, logout }}>
             {children}
         </AuthContext.Provider>
     );

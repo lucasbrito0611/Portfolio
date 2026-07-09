@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FiEye, FiEyeOff } from "react-icons/fi";
 import { useAuth } from "../context/AuthContext";
@@ -7,6 +7,7 @@ import api from "../lib/api";
 
 function AdminLoginModal() {
   const { login } = useAuth();
+  const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -29,8 +30,10 @@ function AdminLoginModal() {
 
     try {
       const { data } = await api.post("/auth/login", { email, password });
-      login(data.accessToken);
-      navigate("/admin");
+      if (data.ok) {
+        login();
+        navigate("/admin");
+      }
     } catch (err) {
       if (err.response) {
         const message = err.response.data?.message ?? "Credenciais inválidas.";
