@@ -1,25 +1,32 @@
-import { useRef, useEffect, useCallback } from "react";
+import { useRef, useEffect, useCallback, useState } from "react";
 import { motion, useMotionValue, useAnimationFrame } from "framer-motion";
 import { slideInFromTop } from "../animations/animations";
 
-import { skills } from "../data/skills";
+import { getAllSkills } from "../services/skills.service";
 
 const SPEED = 50; 
 
 const Skills = () => {
+    const [skills, setSkills] = useState([]);
     const trackRef = useRef(null);
     const x = useMotionValue(0);
     const isDragging = useRef(false);
     const halfWidth = useRef(0);
 
     useEffect(() => {
-        if (trackRef.current) {
-        const firstSet = trackRef.current.children[0];
-        if (firstSet) {
-            halfWidth.current = firstSet.offsetWidth;
-        }
-        }
+        getAllSkills()
+            .then((data) => setSkills(data))
+            .catch((err) => console.error("Erro ao buscar skills:", err));
     }, []);
+
+    useEffect(() => {
+        if (trackRef.current && skills.length > 0) {
+            const firstSet = trackRef.current.children[0];
+            if (firstSet) {
+                halfWidth.current = firstSet.offsetWidth;
+            }
+        }
+    }, [skills]);
 
     const wrapX = useCallback((val) => {
         const hw = halfWidth.current;
@@ -79,15 +86,15 @@ const Skills = () => {
                 {[...Array(3)].map((_, i) => (
                 <div key={i} className="flex items-center nt-lg:gap-14 gap-10 px-5">
                     {skills.map((skill) => (
-                    <a href={skill.href} target="_blank" rel="noopener noreferrer">
-                        <img
-                            key={skill.alt}
-                            src={skill.src}
-                            alt={skill.alt}
-                            className={`${skill.className} h-auto select-none hover:scale-120 transition-all duration-300`}
-                            draggable={false}
-                        />
-                    </a>
+                        <a href={skill.docUrl} target="_blank" rel="noopener noreferrer" key={skill.id}>
+                            <img
+                                src={skill.imageUrl}
+                                alt={skill.name}
+                                title={skill.name}
+                                className={`${skill.className} h-auto select-none hover:scale-120 transition-all duration-300`}
+                                draggable={false}
+                            />
+                        </a>
                     ))}
                 </div>
                 ))}
