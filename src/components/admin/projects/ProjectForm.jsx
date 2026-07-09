@@ -10,6 +10,7 @@ const EMPTY_FORM = {
     technologies: '',  
     siteUrl: '',
     githubUrl: '',
+    githubUrlBackend: '',
     order: 0,
 };
 
@@ -32,6 +33,7 @@ function ProjectForm({ project, isOpen, saving, error, onSave, onClose }) {
                     : '',
                 siteUrl: project.siteUrl ?? '',
                 githubUrl: project.githubUrl ?? '',
+                githubUrlBackend: project.githubUrlBackend ?? '',
                 order: project.order ?? 0,
             });
         } else {
@@ -93,6 +95,7 @@ function ProjectForm({ project, isOpen, saving, error, onSave, onClose }) {
             // Remove campos opcionais vazios para não enviar strings vazias
             siteUrl: form.siteUrl || undefined,
             githubUrl: form.githubUrl || undefined,
+            githubUrlBackend: form.githubUrlBackend || undefined,
         };
         onSave(payload);
     };
@@ -176,12 +179,15 @@ function ProjectForm({ project, isOpen, saving, error, onSave, onClose }) {
                                 Dimensão recomendada: 420x270. Máximo: 3 MB.
                             </p>
                         </Field>
+                        <Field label="URL do Site" id="siteUrl">
+                            <input type="url" id="siteUrl" name="siteUrl" value={form.siteUrl} onChange={handleChange} placeholder="https://meusite.com" className={inputClass} />
+                        </Field>
                         <div className="grid grid-cols-2 gap-3">
-                            <Field label="URL do Site" id="siteUrl">
-                                <input type="url" id="siteUrl" name="siteUrl" value={form.siteUrl} onChange={handleChange} placeholder="https://meusite.com" className={inputClass} />
+                            <Field label="GitHub (Frontend)" id="githubUrl">
+                                <input type="url" id="githubUrl" name="githubUrl" value={form.githubUrl} onChange={handleChange} placeholder="https://github.com/user/repo-frontend" className={inputClass} />
                             </Field>
-                            <Field label="URL do GitHub" id="githubUrl">
-                                <input type="url" id="githubUrl" name="githubUrl" value={form.githubUrl} onChange={handleChange} placeholder="https://github.com/user/repo" className={inputClass} />
+                            <Field label="GitHub (Backend)" id="githubUrlBackend">
+                                <input type="url" id="githubUrlBackend" name="githubUrlBackend" value={form.githubUrlBackend} onChange={handleChange} placeholder="https://github.com/user/repo-backend" className={inputClass} />
                             </Field>
                         </div>
                     </div>

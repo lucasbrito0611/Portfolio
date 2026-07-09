@@ -81,6 +81,7 @@ const Projects = () => {
                                     buttons={{
                                         site: project.siteUrl ?? null,
                                         github: project.githubUrl ?? null,
+                                        githubBackend: project.githubUrlBackend ?? null,
                                     }}
                                 />
                             ))}
