@@ -5,7 +5,7 @@ Interface do meu portfólio pessoal, desenvolvida em React com animações sofis
 ## ✨ Destaques
 
 - Portfólio público com projetos e skills carregados dinamicamente da API
-- Área administrativa protegida por JWT para gerenciar conteúdo (CRUD)
+- Área administrativa protegida por JWT (via cookies HttpOnly) para gerenciar conteúdo (CRUD)
 - Internacionalização (Português 🇧🇷 / Inglês 🇺🇸) via `i18next`
 - Animações de entrada com **GSAP** e transições fluidas com **Framer Motion**
 - Drag-and-drop para reordenar projetos e skills no painel admin (`@dnd-kit`)
