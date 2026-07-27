@@ -5,18 +5,39 @@ import { motion } from "framer-motion";
 import Project from '../../components/Project.jsx';
 import { getAllProjects } from '../../services/projects.service.js';
 import { slideInFromBottom, slideInFromLeft } from "../../animations/animations.jsx"
+import { projects as staticProjects } from '../../data/projects.js';
+
+/** Converte a shape dos dados estáticos para a shape usada pela API. */
+const normalizeStaticProject = (p, t) => ({
+    id: p.title,
+    imageUrl: p.image,
+    title_pt: t(p.title),
+    title_en: t(p.title),
+    description_pt: t(p.description),
+    description_en: t(p.description),
+    technologies: p.technologies,
+    siteUrl: p.buttons?.site ?? null,
+    githubUrl: p.buttons?.github ?? null,
+    githubUrlBackend: p.buttons?.githubBackend ?? null,
+});
 
 const Projects = () => {
     const { t, i18n } = useTranslation();
 
     const [projects, setProjects] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    const [usingFallback, setUsingFallback] = useState(false);
 
     useEffect(() => {
         getAllProjects()
-            .then((data) => setProjects(data))
-            .catch((err) => setError(err.message))
+            .then((data) => {
+                setProjects(data);
+                setUsingFallback(false);
+            })
+            .catch(() => {
+                setProjects(staticProjects.map((p) => normalizeStaticProject(p, t)));
+                setUsingFallback(true);
+            })
             .finally(() => setLoading(false));
     }, []);
 
@@ -54,13 +75,7 @@ const Projects = () => {
                 </div>
             )}
 
-            {error && (
-                <p className="text-red-400 font-fira-code text-sm text-center">
-                    Erro ao carregar projetos: {error}
-                </p>
-            )}
-
-            {!loading && !error && (
+            {!loading && (
                 <div className='flex flex-col gap-y-12'>
                     {groupedProjects.map((row, index) => (
                         <motion.div

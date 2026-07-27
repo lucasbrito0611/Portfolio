@@ -3,11 +3,22 @@ import { motion, useMotionValue, useAnimationFrame } from "framer-motion";
 import { slideInFromTop } from "../animations/animations";
 
 import { getAllSkills } from "../services/skills.service";
+import { skills as staticSkills } from "../data/skills.js";
+
+/** Converte a shape dos dados estáticos para a shape usada pela API. */
+const normalizeStaticSkill = (s, index) => ({
+    id: s.alt + index,
+    imageUrl: s.src,
+    name: s.alt,
+    docUrl: s.href,
+    className: s.className,
+});
 
 const SPEED = 50; 
 
 const Skills = () => {
     const [skills, setSkills] = useState([]);
+    const [usingFallback, setUsingFallback] = useState(false);
     const trackRef = useRef(null);
     const x = useMotionValue(0);
     const isDragging = useRef(false);
@@ -15,8 +26,14 @@ const Skills = () => {
 
     useEffect(() => {
         getAllSkills()
-            .then((data) => setSkills(data))
-            .catch((err) => console.error("Erro ao buscar skills:", err));
+            .then((data) => {
+                setSkills(data);
+                setUsingFallback(false);
+            })
+            .catch(() => {
+                setSkills(staticSkills.map(normalizeStaticSkill));
+                setUsingFallback(true);
+            });
     }, []);
 
     useEffect(() => {
