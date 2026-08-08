@@ -9,7 +9,7 @@
             "greeting": "Hello, my name is",
             "name": "{{name}}",
             "position": "Full Stack Developer",
-            "description": "Computer Technician specialized in Internet Technologies, I develop complete web applications, working both on the front-end with React, JS and TS, and on the back-end with Python + Django REST and PHP + Laravel.",
+            "description": "Computer Technician specialized in Internet Technologies, I develop complete web applications, working both on the front-end with React, JS and TS, and on the back-end with Python + Django REST, PHP + Laravel and NestJS.",
             "cv_text": "Resume",
             "cv_title": "Download Resume",
             "cv_link": "https://drive.google.com/file/d/1gR84H48gWxPHC7fG3CwGs8xQZJY87JIe/view?usp=drive_link"
@@ -18,12 +18,12 @@
             "title": "About Me",
             "age": "19 years",
             "desktop": {
-                "text_1": "I am a <highlight>Computer Technician specialized in Internet Technologies, certified by IFRN.</highlight> Throughout the course, I have been developing my skills and improving my knowledge. Today, I have experience in web development, working on both the <highlight>front-end</highlight> and <highlight>back-end</highlight>. During the four years of the program, I was able to learn how to work as part of a team and apply the knowledge I gained in various projects. I learned about <highlight>Databases</highlight> and also completed a full project using <highlight>React, TypeScript, Django REST e Laravel</highlight>, which helped me further solidify my skills.",
-                "text_2": "My first contact with the job market was as a <highlight>scholarship holder at the <link1>Centro de Soluções Aplicadas (CSA)</link1>,</highlight> where I learned to use <highlight>WordPress</highlight>. I am currently an <highlight>intern in front-end development at <link2>Maxmeio</link2></highlight>, where I mainly use <highlight>Tailwind and Bootstrap</highlight> integrated with <highlight>Laravel</highlight> on a daily basis."
+                "text_1": "I am a <highlight>Computer Technician specialized in Internet Technologies, certified by IFRN.</highlight> Throughout the course, I have been developing my skills and improving my knowledge. Today, I have experience in web development, working on both the <highlight>front-end</highlight> and <highlight>back-end</highlight>. During the four years of the program, I was able to learn how to work as part of a team and apply the knowledge I gained in various projects. I learned about <highlight>Databases</highlight> and also completed a full project using <highlight>React, TypeScript, Django REST and Laravel</highlight>, which helped me further solidify my skills.",
+                "text_2": "My first contact with the job market was as a <highlight>scholarship holder at the <link1>Centro de Soluções Aplicadas (CSA)</link1>,</highlight> where I learned to use <highlight>WordPress</highlight>. I am currently an <highlight>intern in fullstack development at <link2>Maxmeio</link2></highlight>, where I mainly use <highlight>Tailwind and Bootstrap</highlight> integrated with <highlight>Laravel</highlight> on a daily basis."
             },
             "mobile": {
                 "text_1": "I am a <highlight>Computer Technician specialized in Internet Technologies, certified by IFRN.</highlight> I have experience in web development, working on both the <highlight>front-end</highlight> and <highlight>back-end</highlight>. I learned about <highlight>Databases</highlight> and also completed a full project using <highlight>React, TypeScript, and Django REST</highlight>, which helped me further solidify my skills.",
-                "text_2": "My first contact with the job market was as a <highlight>scholarship holder at the <link1>Centro de Soluções Aplicadas (CSA)</link1>,</highlight> where I worked using <highlight>WordPress</highlight>. I am currently an <highlight>intern in front-end development at <link2>Maxmeio</link2></highlight>, where I mainly use <highlight>Tailwind and Bootstrap</highlight> integrated with <highlight>Laravel</highlight> on a daily basis."
+                "text_2": "My first contact with the job market was as a <highlight>scholarship holder at the <link1>Centro de Soluções Aplicadas (CSA)</link1>,</highlight> where I worked using <highlight>WordPress</highlight>. I am currently an <highlight>intern in fullstack development at <link2>Maxmeio</link2></highlight>, where I mainly use <highlight>Tailwind and Bootstrap</highlight> integrated with <highlight>Laravel</highlight> on a daily basis."
             }
         },
         "projects": {

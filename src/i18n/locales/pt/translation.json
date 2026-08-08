@@ -9,7 +9,7 @@
             "greeting": "Olá, meu nome é",
             "name": "{{name}}",
             "position": "Desenvolvedor Full Stack",
-            "description": "Técnico em Informática para Internet, eu desenvolvo aplicações web completas, atuando tanto no front-end com React, JS e TS, quanto no back-end com Python + Django REST e PHP + Laravel.", 
+            "description": "Técnico em Informática para Internet, eu desenvolvo aplicações web completas, atuando tanto no front-end com React, JS e TS, quanto no back-end com Python + Django REST, PHP + Laravel e NestJS.", 
             "cv_text": "Currículo",
             "cv_title": "Baixar Currículo",
             "cv_link": "https://drive.google.com/file/d/15tFoiZ-JDQuQJbuQZJoTwkq-YHsa1kdp/view?usp=sharing"
@@ -19,11 +19,11 @@
             "age": "19 anos",
             "desktop": {
                 "text_1": "Sou <highlight>Técnico em Informática para Internet, formado pelo IFRN.</highlight> Ao longo do curso, fui desenvolvendo minhas habilidades e aprimorando meus conhecimentos. Hoje, tenho experiência no desenvolvimento web, com atuações tanto no <highlight>front-end</highlight> quanto no <highlight>back-end</highlight>. Durante os 4 anos do curso, pude aprender a trabalhar em equipe e aplicar os conhecimentos adquiridos em diversos projetos. Aprendi sobre <highlight>Banco de Dados</highlight>, além de realizar um projeto completo com <highlight>React, TypeScript e Django REST</highlight>, que me ajudou a consolidar ainda mais meus conhecimentos.",
-                "text_2": "Meu primeiro contato com o mercado de trabalho foi como <highlight>bolsista no <link1>Centro de Soluções Aplicadas (CSA)</link1>,</highlight> onde aprendi a utilizar o <highlight>Wordpress</highlight>. Atualmente sou <highlight>estagiário de desenvolvimento front-end na <link2>Maxmeio</link2> </highlight>, onde utilizo principalmente <highlight>Tailwind e Bootstrap</highlight> integrados ao <highlight>Laravel</highlight> no dia a dia."
+                "text_2": "Meu primeiro contato com o mercado de trabalho foi como <highlight>bolsista no <link1>Centro de Soluções Aplicadas (CSA)</link1>,</highlight> onde aprendi a utilizar o <highlight>Wordpress</highlight>. Atualmente sou <highlight>estagiário de desenvolvimento fullstack na <link2>Maxmeio</link2> </highlight>, onde utilizo principalmente <highlight>Tailwind e Bootstrap</highlight> integrados ao <highlight>Laravel</highlight> no dia a dia."
             },
             "mobile": {
                 "text_1": "Sou <highlight>Técnico em Informática para Internet, formado pelo IFRN.</highlight> Tenho experiência no desenvolvimento web, com atuações no <highlight>front-end</highlight> e no <highlight>back-end</highlight>. Aprendi sobre <highlight>Banco de Dados</highlight>, além de realizar um projeto completo com <highlight>React, TypeScript e Django REST</highlight>, que me ajudou a consolidar ainda mais meus conhecimentos.",
-                "text_2": "Meu primeiro contato com o mercado de trabalho foi como <highlight>bolsista no <link1>Centro de Soluções Aplicadas (CSA)</link1>,</highlight> onde trabalhei com <highlight>Wordpress</highlight>. Atualmente sou <highlight>estagiário de desenvolvimento front-end na <link2>Maxmeio</link2> </highlight>, onde utilizo principalmente <highlight>Tailwind e Bootstrap</highlight> integrados ao <highlight>Laravel</highlight> no dia a dia."
+                "text_2": "Meu primeiro contato com o mercado de trabalho foi como <highlight>bolsista no <link1>Centro de Soluções Aplicadas (CSA)</link1>,</highlight> onde trabalhei com <highlight>Wordpress</highlight>. Atualmente sou <highlight>estagiário de desenvolvimento fullstack na <link2>Maxmeio</link2> </highlight>, onde utilizo principalmente <highlight>Tailwind e Bootstrap</highlight> integrados ao <highlight>Laravel</highlight> no dia a dia."
             }
         },
         "projects": {
